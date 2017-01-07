@@ -8,6 +8,6 @@
 
 #import "TMBaseTabbarVC.h"
 
-@interface TMAgreementVC : TMBaseTabbarVC
+@interface TMAgreementVC : TMBaseVC
 
 @end

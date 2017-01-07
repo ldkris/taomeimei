@@ -147,13 +147,15 @@
 }
 #pragma mark event response
 -(void)onclickLoginBtn:(UIButton *)sender{
-
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 -(void)onclickRegisterBtn:(UIButton *)sender{
     TMRegisterVC *mRegisterVC = [[TMRegisterVC alloc]init];
     [self.navigationController pushViewController:mRegisterVC animated:YES];
 }
 -(void)onclickForgoteBtn:(UIButton *)sender{
-    
+    TMRegisterVC *mRegisterVC = [[TMRegisterVC alloc]init];
+    mRegisterVC.isPWD = YES;
+    [self.navigationController pushViewController:mRegisterVC animated:YES];
 }
 @end

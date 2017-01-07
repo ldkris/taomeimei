@@ -13,6 +13,7 @@
 @property(nonatomic,retain)UIView *mLineView;
 @property(nonatomic,retain)UILabel *mAgrermentTitle;
 @property(nonatomic,retain)UIImageView *mBgImageView;
+
 @end
 
 @implementation TMAgreementVC
@@ -23,10 +24,14 @@
     [self.view setBackgroundColor:[UIColor colorWithHexString:@"f2f2f2"]];
     self.title = @"淘美美用户协议";
     
-    [self.view addSubview:self.mContentTextView];
+    [self.view addSubview:self.mBgImageView];
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    [self.mBgImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.mas_equalTo(13);
+        make.bottom.right.mas_equalTo(-13);
+    }];
     
 }
 - (void)didReceiveMemoryWarning {
@@ -58,7 +63,8 @@
 -(UIImageView *)mBgImageView {
     if (_mBgImageView == nil) {
         _mBgImageView = [[UIImageView alloc]init];
-        [_mBgImageView setImage:[UIImage imageNamed:@""]];
+        [_mBgImageView setImage:[UIImage imageNamed:@"tm_rec_content"]];
+        [_mBgImageView setContentMode:UIViewContentModeScaleAspectFill];
     }
     return _mBgImageView;
 }

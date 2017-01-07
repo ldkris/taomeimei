@@ -32,6 +32,7 @@
     }
 }
 -(void)viewWillAppear:(BOOL)animated{
+  //  [self.navigationController setNavigationBarHidden:YES animated:animated];
     [super viewWillAppear:animated];
     [self hideZJTbar];
     
@@ -40,6 +41,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
 }
 -(void)viewWillDisappear:(BOOL)animated{
+    //[self.navigationController setNavigationBarHidden:NO animated:animated];
     [super viewWillDisappear:animated];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
     

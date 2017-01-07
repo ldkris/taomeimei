@@ -26,3 +26,4 @@
 
 #import "UIColor+HexString.h"
 #import "TMBaseVC.h"
+#import "TMCollectionViewCell.h"

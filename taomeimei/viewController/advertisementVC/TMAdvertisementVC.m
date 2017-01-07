@@ -12,6 +12,8 @@
 #import "TMGuideVC.h"
 #import "TMNavigationController.h"
 #import "loginVC.h"
+
+#import "TMRenterVC.h"
 @interface TMAdvertisementVC ()
 @property(nonatomic,strong)UIImageView *mBgView;
 @property(nonatomic,strong)UIButton *mTGBtn;
@@ -76,11 +78,10 @@
         return;
     }
     
-    UIViewController *oneVC  = [[UIViewController alloc]init];
-    UIViewController *twoVC  = [[UIViewController alloc]init];
+    TMRenterVC *mRenterVC  = [[TMRenterVC alloc]init];
     TMBaseTabbarVC *mTabVC = [[TMBaseTabbarVC alloc]init];
     [mTabVC setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-    [mTabVC setViewControllers:@[oneVC,twoVC]];
+    [mTabVC setViewControllers:@[mRenterVC]];
     [self presentViewController:mTabVC animated:YES completion:nil];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

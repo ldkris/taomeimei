@@ -37,6 +37,12 @@
 		A0C0E53A1E1E2A6B001C632C /* tm_reg_yqr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C0E5381E1E2A6B001C632C /* tm_reg_yqr@2x.png */; };
 		A0C0E53E1E1E2AFA001C632C /* TMAgreementVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C0E53D1E1E2AFA001C632C /* TMAgreementVC.m */; };
 		A0C0E5411E1E2DA4001C632C /* tm_rec_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C0E5401E1E2DA4001C632C /* tm_rec_bg@2x.png */; };
+		A0DE4F001E20DD4E00F4E02A /* tm_rec_content@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0DE4EFF1E20DD4E00F4E02A /* tm_rec_content@2x.png */; };
+		A0DE4F041E20E27100F4E02A /* TMRenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE4F031E20E27100F4E02A /* TMRenterVC.m */; };
+		A0DE4F081E20E2B200F4E02A /* TMRNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE4F071E20E2B200F4E02A /* TMRNavView.m */; };
+		A0DE4F0B1E20E39D00F4E02A /* tm_nav_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0DE4F0A1E20E39C00F4E02A /* tm_nav_bg@2x.png */; };
+		A0DE4F161E20E9CD00F4E02A /* TMCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE4F151E20E9CD00F4E02A /* TMCollectionViewCell.m */; };
+		A0DE4F1A1E20ED4B00F4E02A /* TMNavMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DE4F191E20ED4B00F4E02A /* TMNavMenuCell.m */; };
 		A0F99FE01E1B93A000C94253 /* TMAdvertisementVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F99FDF1E1B93A000C94253 /* TMAdvertisementVC.m */; };
 		A0F99FE31E1B94B900C94253 /* tm_ad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F99FE21E1B94B900C94253 /* tm_ad@2x.png */; };
 		A0F99FE51E1B9D5A00C94253 /* ad_btn_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0F99FE41E1B9D5A00C94253 /* ad_btn_bg@2x.png */; };
@@ -118,6 +124,16 @@
 		A0C0E53C1E1E2AFA001C632C /* TMAgreementVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMAgreementVC.h; sourceTree = "<group>"; };
 		A0C0E53D1E1E2AFA001C632C /* TMAgreementVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMAgreementVC.m; sourceTree = "<group>"; };
 		A0C0E5401E1E2DA4001C632C /* tm_rec_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tm_rec_bg@2x.png"; sourceTree = "<group>"; };
+		A0DE4EFF1E20DD4E00F4E02A /* tm_rec_content@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tm_rec_content@2x.png"; sourceTree = "<group>"; };
+		A0DE4F021E20E27100F4E02A /* TMRenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMRenterVC.h; sourceTree = "<group>"; };
+		A0DE4F031E20E27100F4E02A /* TMRenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMRenterVC.m; sourceTree = "<group>"; };
+		A0DE4F061E20E2B200F4E02A /* TMRNavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMRNavView.h; sourceTree = "<group>"; };
+		A0DE4F071E20E2B200F4E02A /* TMRNavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMRNavView.m; sourceTree = "<group>"; };
+		A0DE4F0A1E20E39C00F4E02A /* tm_nav_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tm_nav_bg@2x.png"; sourceTree = "<group>"; };
+		A0DE4F141E20E9CD00F4E02A /* TMCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCollectionViewCell.h; sourceTree = "<group>"; };
+		A0DE4F151E20E9CD00F4E02A /* TMCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMCollectionViewCell.m; sourceTree = "<group>"; };
+		A0DE4F181E20ED4B00F4E02A /* TMNavMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMNavMenuCell.h; sourceTree = "<group>"; };
+		A0DE4F191E20ED4B00F4E02A /* TMNavMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMNavMenuCell.m; sourceTree = "<group>"; };
 		A0F99FD91E1B917A00C94253 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		A0F99FDB1E1B926D00C94253 /* CommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
 		A0F99FDE1E1B93A000C94253 /* TMAdvertisementVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMAdvertisementVC.h; sourceTree = "<group>"; };
@@ -339,14 +355,63 @@
 		A0C0E53F1E1E2DA4001C632C /* res */ = {
 			isa = PBXGroup;
 			children = (
+				A0DE4EFF1E20DD4E00F4E02A /* tm_rec_content@2x.png */,
 				A0C0E5401E1E2DA4001C632C /* tm_rec_bg@2x.png */,
 			);
 			path = res;
 			sourceTree = "<group>";
 		};
+		A0DE4F011E20E24400F4E02A /* renterVC */ = {
+			isa = PBXGroup;
+			children = (
+				A0DE4F171E20ED1E00F4E02A /* cell */,
+				A0DE4F091E20E39000F4E02A /* res */,
+				A0DE4F051E20E28D00F4E02A /* view */,
+				A0DE4F021E20E27100F4E02A /* TMRenterVC.h */,
+				A0DE4F031E20E27100F4E02A /* TMRenterVC.m */,
+			);
+			path = renterVC;
+			sourceTree = "<group>";
+		};
+		A0DE4F051E20E28D00F4E02A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A0DE4F061E20E2B200F4E02A /* TMRNavView.h */,
+				A0DE4F071E20E2B200F4E02A /* TMRNavView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A0DE4F091E20E39000F4E02A /* res */ = {
+			isa = PBXGroup;
+			children = (
+				A0DE4F0A1E20E39C00F4E02A /* tm_nav_bg@2x.png */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		A0DE4F131E20E9B100F4E02A /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				A0DE4F141E20E9CD00F4E02A /* TMCollectionViewCell.h */,
+				A0DE4F151E20E9CD00F4E02A /* TMCollectionViewCell.m */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		A0DE4F171E20ED1E00F4E02A /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				A0DE4F181E20ED4B00F4E02A /* TMNavMenuCell.h */,
+				A0DE4F191E20ED4B00F4E02A /* TMNavMenuCell.m */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		A0F99FD51E1B8FF900C94253 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				A0DE4F011E20E24400F4E02A /* renterVC */,
 				A0F99FDC1E1B930100C94253 /* baseViewContorller */,
 				A0C0E53B1E1E2ACF001C632C /* agreementVC */,
 				A02E01FA1E1CEB9C00C62C61 /* registerVC */,
@@ -360,6 +425,7 @@
 		A0F99FD71E1B90F500C94253 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				A0DE4F131E20E9B100F4E02A /* Global */,
 				A0F99FE61E1BA01F00C94253 /* Category */,
 				A0F99FDA1E1B926D00C94253 /* Macro */,
 				A0F99FD81E1B90F500C94253 /* helper */,
@@ -559,6 +625,7 @@
 				A0F99FF61E1BAD5F00C94253 /* tab_xx@2x.png in Resources */,
 				A0F99FF81E1BAD5F00C94253 /* tab_zt@2x.png in Resources */,
 				A0C0E5391E1E2A6B001C632C /* tm_reg_dh@2x.png in Resources */,
+				A0DE4F0B1E20E39D00F4E02A /* tm_nav_bg@2x.png in Resources */,
 				A02E01EC1E1CC49200C62C61 /* login_user@2x.png in Resources */,
 				A02E02051E1CED7500C62C61 /* tm_reg_db@2x.png in Resources */,
 				A02E01CB1E1C953B00C62C61 /* tab_xx_selected@2x.png in Resources */,
@@ -569,6 +636,7 @@
 				A02E01E41E1CBE0D00C62C61 /* tm_login_topbg@2x.png in Resources */,
 				A02E02071E1CF79400C62C61 /* icon_back@2x.png in Resources */,
 				A0C0E5411E1E2DA4001C632C /* tm_rec_bg@2x.png in Resources */,
+				A0DE4F001E20DD4E00F4E02A /* tm_rec_content@2x.png in Resources */,
 				A0F99FE51E1B9D5A00C94253 /* ad_btn_bg@2x.png in Resources */,
 				A01140D51E15FDA100311731 /* Assets.xcassets in Resources */,
 				A0F99FFD1E1BB39800C94253 /* tab_wd_selected@2x.png in Resources */,
@@ -654,17 +722,21 @@
 				A01140CD1E15FDA100311731 /* AppDelegate.m in Sources */,
 				A0F99FE91E1BA05C00C94253 /* UIButton+Countdown.m in Sources */,
 				A0C0E53E1E1E2AFA001C632C /* TMAgreementVC.m in Sources */,
+				A0DE4F1A1E20ED4B00F4E02A /* TMNavMenuCell.m in Sources */,
 				A02E01F51E1CD12100C62C61 /* TMBaseVC.m in Sources */,
 				A02E01E81E1CBF9300C62C61 /* TMloginInPutView.m in Sources */,
 				A09C5F491E1E10F600162939 /* TMRegisterInputView.m in Sources */,
 				A02E02001E1CEC6200C62C61 /* TMNavigationController.m in Sources */,
 				A02E01EF1E1CC6AF00C62C61 /* UIColor+HexString.m in Sources */,
 				A02E01DD1E1CBC4C00C62C61 /* loginVC.m in Sources */,
+				A0DE4F161E20E9CD00F4E02A /* TMCollectionViewCell.m in Sources */,
 				A02E01CF1E1C968C00C62C61 /* TMGuideVC.m in Sources */,
+				A0DE4F081E20E2B200F4E02A /* TMRNavView.m in Sources */,
 				A0F99FEF1E1BA90800C94253 /* TMBaseTabbarVC.m in Sources */,
 				A0F99FE01E1B93A000C94253 /* TMAdvertisementVC.m in Sources */,
 				A01140CA1E15FDA100311731 /* main.m in Sources */,
 				A02E01FD1E1CEBB900C62C61 /* TMRegisterVC.m in Sources */,
+				A0DE4F041E20E27100F4E02A /* TMRenterVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

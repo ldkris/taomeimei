@@ -9,5 +9,5 @@
 #import "TMBaseVC.h"
 
 @interface TMRegisterVC : TMBaseVC
-
+@property(assign,nonatomic)BOOL isPWD;
 @end

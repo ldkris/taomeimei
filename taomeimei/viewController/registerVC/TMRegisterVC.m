@@ -27,8 +27,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"注册";
-    
+    if(_isPWD){
+        self.title = @"忘记密码";
+    }else{
+        self.title = @"注册";
+    }
+
     [self.view addSubview:self.mBottomImageView];
     [self.view addSubview:self.mPhoneInputView];
     [self.view addSubview:self.mCodeInputView];
@@ -119,8 +123,14 @@
 -(TMRegisterInputView *)mInviteView{
     if (_mInviteView == nil) {
         _mInviteView = [[TMRegisterInputView alloc]init];
-        [_mInviteView setImage:[UIImage imageNamed:@"login_pwd"]];
-        [_mInviteView setPlaceholder:@"请输入邀请人ID(选填)"];
+        [_mPWDInputView setIsPassword:_isPWD];
+        if (_isPWD) {
+            [_mInviteView setImage:[UIImage imageNamed:@"login_pwd"]];
+            [_mInviteView setPlaceholder:@"请输入密码"];
+        }else{
+            [_mInviteView setImage:[UIImage imageNamed:@"login_pwd"]];
+            [_mInviteView setPlaceholder:@"请输入邀请人ID(选填)"];
+        }
     }
     return _mInviteView;
 }
@@ -128,8 +138,17 @@
     if (_mPWDInputView == nil) {
         _mPWDInputView = [[TMRegisterInputView alloc]init];
         [_mPWDInputView setImage:[UIImage imageNamed:@"tm_reg_yqr"]];
-        [_mPWDInputView setPlaceholder:@"请输入密码"];
-        [_mPWDInputView setIsPassword:YES];
+        if (_isPWD) {
+            [_mPWDInputView setImage:[UIImage imageNamed:@"login_pwd"]];
+            [_mPWDInputView setPlaceholder:@"请再次输入密码"];
+            [_mPWDInputView setIsPassword:YES];
+        }
+        else
+        {
+            [_mPWDInputView setPlaceholder:@"请输入密码"];
+            [_mPWDInputView setIsPassword:YES];
+        }
+     
     }
     
     return _mPWDInputView;
@@ -138,7 +157,13 @@
     if (_mRegisterBtn == nil) {
         _mRegisterBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_mRegisterBtn setBackgroundImage:[UIImage imageNamed:@"icon_btn_bg_red"] forState:UIControlStateNormal];
-        [_mRegisterBtn setTitle:@"注 册" forState:UIControlStateNormal];
+        if (_isPWD) {
+            [_mRegisterBtn setTitle:@"确 定" forState:UIControlStateNormal];
+        }
+        else
+        {
+            [_mRegisterBtn setTitle:@"注 册" forState:UIControlStateNormal];
+        }
         [_mRegisterBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_mRegisterBtn.titleLabel setFont:DEFAULT_FONT(15)];
         [_mRegisterBtn setTitleEdgeInsets:UIEdgeInsetsMake(-10, 0, 0, 0)];
@@ -149,6 +174,7 @@
 -(UIButton *)mAgreementBtn{
     if (_mAgreementBtn == nil) {
         _mAgreementBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _mAgreementBtn.hidden = _isPWD;
         [_mAgreementBtn setTitle:@"《用户使用及隐私协议》" forState:UIControlStateNormal];
         [_mAgreementBtn setTitleColor:[UIColor colorWithHexString:@"ff94ac"] forState:UIControlStateNormal];
         [_mAgreementBtn.titleLabel setFont:DEFAULT_FONT(11)];
@@ -159,6 +185,7 @@
 -(UILabel *)mAgreementLable{
     if (_mAgreementLable == nil) {
         _mAgreementLable = [[UILabel alloc]init];
+        _mAgreementLable.hidden = _isPWD;
         [_mAgreementLable setText:@"注册即表示同意"];
         [_mAgreementLable setFont:DEFAULT_FONT(11)];
         [_mAgreementLable setTextColor:[UIColor colorWithHexString:@"cbcbcb"]];
