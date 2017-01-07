@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "TMAdvertisementVC.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    if (self.window == nil) {
+        self.window = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, MainScreenFrame_Width, MainScreenFrame_Height)];
+        [self.window setBackgroundColor:[UIColor whiteColor]];
+    }
+    
+    TMAdvertisementVC *mRootVC = [[TMAdvertisementVC alloc]init];
+    [self.window setRootViewController:mRootVC];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
