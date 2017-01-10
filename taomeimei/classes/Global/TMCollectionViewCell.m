@@ -9,16 +9,15 @@
 #import "TMCollectionViewCell.h"
 
 @implementation TMCollectionViewCell
--(instancetype)init{
-    self = [super init];
-    if(self){
-       
+
+-(instancetype)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.backgroundColor = [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1];
+       // [self setSelectionStyle:UITableViewCellSelectionStyleNone];
     }
+    
     return self;
 }
 
-- (void)prepareForReuse{
-    [super prepareForReuse];
-     self.backgroundColor = [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1];
-}
 @end

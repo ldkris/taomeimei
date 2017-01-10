@@ -23,6 +23,8 @@
     self.pageIndex = 1;
     self.view.backgroundColor = [UIColor whiteColor];
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     self.navigationController.interactivePopGestureRecognizer.delegate = (id<UIGestureRecognizerDelegate>)self;
     
     self.edgesForExtendedLayout = UIRectEdgeNone;
@@ -48,6 +50,19 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
 }
 #pragma mark public
+-(UITableView *)createTableView{
+   UITableView *mInfoTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+    mInfoTableView.rowHeight = UITableViewAutomaticDimension;
+    mInfoTableView.estimatedRowHeight = 100;
+    mInfoTableView.tableFooterView = [UIView new];
+    [mInfoTableView  setBackgroundColor:[UIColor whiteColor]];
+    mInfoTableView.delegate = self;
+    mInfoTableView.dataSource = self;
+    mInfoTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    mInfoTableView.showsVerticalScrollIndicator = NO;
+    mInfoTableView.showsHorizontalScrollIndicator = NO;
+    return mInfoTableView;
+}
 - (void)keyboardWillHide:(NSNotification *) notification {
     [self.view removeGestureRecognizer:mTap];
     mTap = nil;

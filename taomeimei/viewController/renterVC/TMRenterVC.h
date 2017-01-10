@@ -8,6 +8,6 @@
 
 #import "TMBaseVC.h"
 
-@interface TMRenterVC : TMBaseVC
+@interface TMRenterVC : TMBaseVC<UITableViewDelegate,UITableViewDataSource>
 
 @end

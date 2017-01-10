@@ -29,7 +29,17 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    [super pushViewController:viewController animated:animated];
+    viewController.hidesBottomBarWhenPushed = YES;
+    self.tabBarController.tabBar.hidden = YES;
+}
+-(UIViewController *)popViewControllerAnimated:(BOOL)animated{
+    UIViewController* vc = [super popViewControllerAnimated:animated];
+    vc.hidesBottomBarWhenPushed = NO;
+    self.tabBarController.tabBar.hidden = YES;
+    return vc;
+}
 /*
 #pragma mark - Navigation
 

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TMBaseVC : UIViewController
+@interface TMBaseVC : UIViewController <UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic,assign)NSInteger pageIndex;
 @property(nonatomic,assign)NSInteger pageSize;
 
@@ -17,4 +17,6 @@
 
 - (void)keyboardWillShow:(NSNotification *) notification;
 - (void)keyboardWillHide:(NSNotification *) notification;
+
+- (UITableView *)createTableView;
 @end

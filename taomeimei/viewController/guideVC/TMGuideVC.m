@@ -8,6 +8,8 @@
 
 #import "TMGuideVC.h"
 #import "TMBaseTabbarVC.h"
+#import "TMNavigationController.h"
+#import "TMRenterVC.h"
 @interface TMGuideVC ()
 @property(nonatomic,retain)UIScrollView *mGuideScrollView;
 @end
@@ -94,12 +96,12 @@
 -(void)onclickStarBtn:(UIButton *)sender{
     [[NSUserDefaults standardUserDefaults]setObject:@"isGuide" forKey:@"isGuide"];
     
-    UIViewController *oneVC  = [[UIViewController alloc]init];
-    UIViewController *twoVC  = [[UIViewController alloc]init];
+    TMRenterVC *mRenterVC  = [[TMRenterVC alloc]init];
+    TMNavigationController *mRenterNavVC = [[TMNavigationController alloc]initWithRootViewController:mRenterVC];
     
     TMBaseTabbarVC *mTabVC = [[TMBaseTabbarVC alloc]init];
     [mTabVC setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-    [mTabVC setViewControllers:@[oneVC,twoVC]];
+    [mTabVC setViewControllers:@[mRenterNavVC]];
     [self presentViewController:mTabVC animated:YES completion:nil];
 }
 

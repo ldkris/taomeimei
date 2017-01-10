@@ -9,5 +9,7 @@
 #import "TMCollectionViewCell.h"
 
 @interface TMNavMenuCell : TMCollectionViewCell
-
+@property(nonatomic,retain)UIImage *mItemBgImage;
+@property(nonatomic,retain)NSString *mItemTitle;
+@property(nonatomic,assign)BOOL mIsSelected;
 @end

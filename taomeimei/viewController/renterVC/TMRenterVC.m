@@ -8,6 +8,8 @@
 
 #import "TMRenterVC.h"
 #import "TMRNavView.h"
+#import "TMRenterListInfoCell.h"
+#import "TMRenterDetailVC.h"
 @interface TMRenterVC ()
 
 @end
@@ -15,27 +17,40 @@
 @implementation TMRenterVC{
     TMRNavView *mNavView;
     UITableView *mInfoTableView;
+    BOOL isPush;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     mNavView = [[TMRNavView alloc]init];
+    [mNavView setMItems:@[@"新上架",@"附近",@"高颜值区",@"低价区",@"认证"]];
+    [mNavView setMpageSize:5];
     [mNavView setMBgImage:[UIImage imageNamed:@"tm_nav_bg"]];
+    [mNavView setDidFiltrateBlcock:^(UIButton *sender) {
+       //筛选
+    }];
+    [mNavView setDidSearchBtnBlcock:^(UIButton *sender) {
+        //搜索
+    }];
+    [mNavView setDidSelectCityBtnBlcock:^(UIButton *sender) {
+        //选择城市
+    }];
+    [mNavView setDidSelectItemAtIndexPathBlcock:^(NSIndexPath *index) {
+       //选择菜单
+        LDLOG(@"%ld",(long)index.row);
+    }];
     [self.view addSubview:mNavView];
     
-    mInfoTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
-    mInfoTableView.rowHeight = UITableViewAutomaticDimension;
-    mInfoTableView.estimatedRowHeight = 100;
-    mInfoTableView.tableFooterView = [UIView new];
-    [mInfoTableView  setBackgroundColor:[UIColor whiteColor]];
+    mInfoTableView =  [self createTableView];
     [self.view addSubview:mInfoTableView];
+    
+    isPush = YES;
 }
 -(void)viewWillAppear:(BOOL)animated{
     [self.navigationController setNavigationBarHidden:YES animated:animated];
     [super viewWillAppear:animated];
-    [self unHideZJTbar];
-    
+    [self unHideZJTbar];    
     [mNavView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.mas_equalTo(0);
         make.height.mas_equalTo(105);
@@ -43,25 +58,50 @@
     [mInfoTableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.left.mas_equalTo(0);
         make.top.equalTo(mNavView.mas_bottom);
+        if (isPush) {
+            make.bottom.mas_equalTo(0);
+        } else  {
+            make.bottom.mas_equalTo(-50);
+        }
     }];
 }
 -(void)viewWillDisappear:(BOOL)animated{
     [self.navigationController setNavigationBarHidden:NO animated:animated];
     [super viewWillDisappear:animated];
+    if (self.navigationController.viewControllers.count>1) {
+        isPush = NO;
+    }
+
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark UITableViewDelegate && UITableViewDataSoure
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 2.0f;
 }
-*/
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return UITableViewAutomaticDimension;
+}
 
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    TMRenterListInfoCell  *cell = [tableView dequeueReusableCellWithIdentifier:@"TMRenterListInfoCell"];
+    if (!cell) {
+        cell = [[TMRenterListInfoCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"TMRenterListInfoCell"];
+    }
+    [cell setMName:@"Mlao_D"];
+    [cell setMPrice:@"200/时"];
+    [cell setMSignature:@"租个男友回家过年吧！"];
+    [cell setMArea:@"重庆"];
+    [cell setMProfession:@"自由职业"];
+    [cell setMImage:[UIImage imageNamed:@"tm_renter_def"]];
+    return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    // [self dismissViewControllerAnimated:YES completion:nil];
+    TMRenterDetailVC *mRenterDetailVC = [[TMRenterDetailVC alloc]init];
+    [self.navigationController pushViewController:mRenterDetailVC animated:YES];
+}
 @end

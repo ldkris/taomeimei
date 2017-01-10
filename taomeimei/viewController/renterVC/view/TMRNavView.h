@@ -10,4 +10,11 @@
 
 @interface TMRNavView : UIView<UICollectionViewDelegate,UICollectionViewDataSource>
 @property(nonatomic,retain)UIImage *mBgImage;
+@property(nonatomic,retain)NSArray *mItems;
+@property(nonatomic,assign)NSInteger mpageSize;
+
+@property(nonatomic,assign)void(^didSelectItemAtIndexPathBlcock)(NSIndexPath *index);
+@property(nonatomic,assign)void(^didSearchBtnBlcock)(UIButton *index);
+@property(nonatomic,assign)void(^didFiltrateBlcock)(UIButton *index);
+@property(nonatomic,assign)void(^didSelectCityBtnBlcock)(UIButton *index);
 @end

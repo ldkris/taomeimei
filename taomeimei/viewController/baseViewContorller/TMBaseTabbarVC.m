@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     
     self.barImages = @[@"tab_zt",@"tab_zb",@"tab_fx",@"tab_xx",@"tab_wd"];
     self.barSelectImages =  @[@"tab_zt_selected",@"tab_zb",@"tab_fx",@"tab_xx_selected",@"tab_wd_selected"];
