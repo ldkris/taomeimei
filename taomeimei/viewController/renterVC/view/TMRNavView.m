@@ -106,10 +106,19 @@
 }
 #pragma mark event response
 -(void)onclickSelectCityBtn:(UIButton *)sender{
+    if (self.didSelectCityBtnBlcock) {
+        self.didSelectCityBtnBlcock(sender);
+    }
 }
 -(void)onclickFiltrateBtn:(UIButton *)sender{
+    if (self.didFiltrateBlcock) {
+        self.didFiltrateBlcock(sender);
+    }
 }
--(void)onclickSearchBtn:(UIButton *)sender{
+-(void)onclickSerachBtn:(UIButton *)sender{
+    if (self.didSearchBtnBlcock) {
+        self.didSearchBtnBlcock(sender);
+    }
 }
 #pragma mark - CollectionViewDataSoure
 //section 的个数

@@ -34,7 +34,7 @@
     }
 }
 -(void)viewWillAppear:(BOOL)animated{
-  //  [self.navigationController setNavigationBarHidden:YES animated:animated];
+   // [self.navigationController setNavigationBarHidden:no animated:animated];
     [super viewWillAppear:animated];
     [self hideZJTbar];
     
@@ -56,6 +56,19 @@
     mInfoTableView.estimatedRowHeight = 100;
     mInfoTableView.tableFooterView = [UIView new];
     [mInfoTableView  setBackgroundColor:[UIColor whiteColor]];
+    mInfoTableView.delegate = self;
+    mInfoTableView.dataSource = self;
+    mInfoTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    mInfoTableView.showsVerticalScrollIndicator = NO;
+    mInfoTableView.showsHorizontalScrollIndicator = NO;
+    return mInfoTableView;
+}
+-(UITableView *)createGourpTableView{
+    UITableView *mInfoTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+    mInfoTableView.rowHeight = UITableViewAutomaticDimension;
+    mInfoTableView.estimatedRowHeight = 100;
+    mInfoTableView.tableFooterView = [UIView new];
+    [mInfoTableView  setBackgroundColor:[UIColor colorWithHexString:@"f1f1f1"]];
     mInfoTableView.delegate = self;
     mInfoTableView.dataSource = self;
     mInfoTableView.separatorStyle = UITableViewCellSeparatorStyleNone;

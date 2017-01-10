@@ -13,8 +13,8 @@
 @property(nonatomic,retain)NSArray *mItems;
 @property(nonatomic,assign)NSInteger mpageSize;
 
-@property(nonatomic,assign)void(^didSelectItemAtIndexPathBlcock)(NSIndexPath *index);
-@property(nonatomic,assign)void(^didSearchBtnBlcock)(UIButton *index);
-@property(nonatomic,assign)void(^didFiltrateBlcock)(UIButton *index);
-@property(nonatomic,assign)void(^didSelectCityBtnBlcock)(UIButton *index);
+@property(nonatomic,copy)void(^didSelectItemAtIndexPathBlcock)(NSIndexPath *index);
+@property(nonatomic,copy)void(^didSearchBtnBlcock)(UIButton *index);
+@property(nonatomic,copy)void(^didFiltrateBlcock)(UIButton *index);
+@property(nonatomic,copy)void(^didSelectCityBtnBlcock)(UIButton *index);
 @end

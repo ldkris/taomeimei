@@ -88,10 +88,10 @@
     
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //        loginVC *mGuideVc = [[loginVC alloc]init];
-//        TMNavigationController *mNav = [[TMNavigationController alloc]initWithRootViewController:mGuideVc];
-//        [mGuideVc setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-//        [mTabVC presentViewController:mNav animated:YES completion:nil];
-//    });
+//       TMNavigationController *mNav = [[TMNavigationController alloc]initWithRootViewController:mGuideVc];
+//       [mGuideVc setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+//       [mTabVC presentViewController:mNav animated:YES completion:nil];
+//   });
 }
 /*
 #pragma mark - Navigation

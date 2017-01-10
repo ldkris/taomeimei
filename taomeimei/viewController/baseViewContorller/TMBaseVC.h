@@ -19,4 +19,5 @@
 - (void)keyboardWillHide:(NSNotification *) notification;
 
 - (UITableView *)createTableView;
+-(UITableView *)createGourpTableView;
 @end

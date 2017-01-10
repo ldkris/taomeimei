@@ -11,6 +11,7 @@
 #import "TMRenterHeaderCell.h"
 #import "TMRenterDetialInfoCell.h"
 #import "TMRenterOtherCell.h"
+#import "TMMeetVC.h"
 @interface TMRenterDetailVC ()
 
 @end
@@ -100,6 +101,8 @@
 
 }
 -(void)onclickYueBtn:(UIButton *)sender{
+    TMMeetVC *mMeetVC = [[TMMeetVC alloc]init];
+    [self.navigationController pushViewController:mMeetVC animated:YES];
 }
 #pragma mark UITableViewDelegate && UITableViewDataSoure
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

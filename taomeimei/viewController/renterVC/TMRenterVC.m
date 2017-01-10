@@ -10,6 +10,9 @@
 #import "TMRNavView.h"
 #import "TMRenterListInfoCell.h"
 #import "TMRenterDetailVC.h"
+#import "TMFiltrateVC.h"
+#import "CityViewController.h"
+#import "MKJFirstViewController.h"
 @interface TMRenterVC ()
 
 @end
@@ -27,14 +30,27 @@
     [mNavView setMItems:@[@"新上架",@"附近",@"高颜值区",@"低价区",@"认证"]];
     [mNavView setMpageSize:5];
     [mNavView setMBgImage:[UIImage imageNamed:@"tm_nav_bg"]];
+    __weak __typeof__(self) weakSelf = self;
     [mNavView setDidFiltrateBlcock:^(UIButton *sender) {
        //筛选
+        TMFiltrateVC *mFileTrateVC = [[TMFiltrateVC alloc]init];
+        [weakSelf.navigationController pushViewController:mFileTrateVC animated:YES];
     }];
     [mNavView setDidSearchBtnBlcock:^(UIButton *sender) {
         //搜索
+        MKJFirstViewController *first = [[MKJFirstViewController alloc]init];
+        UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:first];
+       // [weakSelf.navigationController presentViewController:nvc animated:YES completion:nil];
+        [weakSelf.navigationController pushViewController:first animated:YES];
     }];
     [mNavView setDidSelectCityBtnBlcock:^(UIButton *sender) {
         //选择城市
+        CityViewController *controller = [[CityViewController alloc] init];
+        controller.currentCityString = @"重庆";
+        controller.selectString = ^(NSString *string){
+            //self.cityLabel.text = string;
+        };
+        [weakSelf presentViewController:controller animated:YES completion:nil];
     }];
     [mNavView setDidSelectItemAtIndexPathBlcock:^(NSIndexPath *index) {
        //选择菜单
