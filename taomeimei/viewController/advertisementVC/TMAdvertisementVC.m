@@ -12,7 +12,7 @@
 #import "TMGuideVC.h"
 #import "TMNavigationController.h"
 #import "loginVC.h"
-
+#import "TMUserCenterVC.h"
 #import "TMRenterVC.h"
 @interface TMAdvertisementVC ()
 @property(nonatomic,strong)UIImageView *mBgView;
@@ -78,12 +78,19 @@
         return;
     }
     
+    
     TMRenterVC *mRenterVC  = [[TMRenterVC alloc]init];
     TMNavigationController *mRenterNavVC = [[TMNavigationController alloc]initWithRootViewController:mRenterVC];
     
+    TMUserCenterVC *userCenterVC = [[TMUserCenterVC alloc] initWithNibName:@"TMUserCenterVC" bundle:nil];
+    TMNavigationController *userCenterNavVC = [[TMNavigationController alloc] initWithRootViewController:userCenterVC];
+    
+    UIViewController *mRenterVC1  = [[UIViewController alloc]init];
+    TMNavigationController *mRenterNavVC1 = [[TMNavigationController alloc]initWithRootViewController:mRenterVC];
+    
     TMBaseTabbarVC *mTabVC = [[TMBaseTabbarVC alloc]init];
     [mTabVC setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-    [mTabVC setViewControllers:@[mRenterNavVC]];
+    [mTabVC setViewControllers:@[mRenterNavVC,userCenterNavVC]];
     [self presentViewController:mTabVC animated:YES completion:nil];
     
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

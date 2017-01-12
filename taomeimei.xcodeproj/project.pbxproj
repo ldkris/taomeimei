@@ -170,6 +170,49 @@
 		A05B92FD1E277364004CC93C /* EaseRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = A05B92831E277364004CC93C /* EaseRecordView.m */; };
 		A05B92FE1E277364004CC93C /* EaseConversationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A05B92861E277364004CC93C /* EaseConversationCell.m */; };
 		A05B92FF1E277364004CC93C /* EaseUIResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A05B92881E277364004CC93C /* EaseUIResource.bundle */; };
+		A05B93481E2789AD004CC93C /* TMBlacklistVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A05B93071E2789AD004CC93C /* TMBlacklistVC.m */; };
+		A05B93491E2789AD004CC93C /* TMBlacklistVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05B93081E2789AD004CC93C /* TMBlacklistVC.xib */; };
+		A05B934A1E2789AD004CC93C /* TMBlacklistTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A05B930B1E2789AD004CC93C /* TMBlacklistTableCell.m */; };
+		A05B934B1E2789AD004CC93C /* TMBlacklistTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05B930C1E2789AD004CC93C /* TMBlacklistTableCell.xib */; };
+		A05B934C1E2789AD004CC93C /* TMPayPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A05B930F1E2789AD004CC93C /* TMPayPasswordVC.m */; };
+		A05B934D1E2789AD004CC93C /* TMPayPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05B93101E2789AD004CC93C /* TMPayPasswordVC.xib */; };
+		A05B934E1E2789AD004CC93C /* TMSetPayPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A05B93121E2789AD004CC93C /* TMSetPayPasswordVC.m */; };
+		A05B934F1E2789AD004CC93C /* TMSetPayPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05B93131E2789AD004CC93C /* TMSetPayPasswordVC.xib */; };
+		A05B93501E2789AD004CC93C /* setting_about.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B93161E2789AD004CC93C /* setting_about.png */; };
+		A05B93511E2789AD004CC93C /* setting_blacklist.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B93171E2789AD004CC93C /* setting_blacklist.png */; };
+		A05B93521E2789AD004CC93C /* setting_clear.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B93181E2789AD004CC93C /* setting_clear.png */; };
+		A05B93531E2789AD004CC93C /* setting_feedback.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B93191E2789AD004CC93C /* setting_feedback.png */; };
+		A05B93541E2789AD004CC93C /* setting_friend.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B931A1E2789AD004CC93C /* setting_friend.png */; };
+		A05B93551E2789AD004CC93C /* setting_logout.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B931B1E2789AD004CC93C /* setting_logout.png */; };
+		A05B93561E2789AD004CC93C /* setting_password.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B931C1E2789AD004CC93C /* setting_password.png */; };
+		A05B93571E2789AD004CC93C /* TMSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A05B931E1E2789AD004CC93C /* TMSettingVC.m */; };
+		A05B93581E2789AD004CC93C /* TMSettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05B931F1E2789AD004CC93C /* TMSettingVC.xib */; };
+		A05B93591E2789AD004CC93C /* TMSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A05B93221E2789AD004CC93C /* TMSettingCell.m */; };
+		A05B935A1E2789AD004CC93C /* TMSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05B93231E2789AD004CC93C /* TMSettingCell.xib */; };
+		A05B935B1E2789AD004CC93C /* default_head.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B93261E2789AD004CC93C /* default_head.png */; };
+		A05B935C1E2789AD004CC93C /* right_detail.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B93271E2789AD004CC93C /* right_detail.png */; };
+		A05B935D1E2789AD004CC93C /* TMUserCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A05B93291E2789AD004CC93C /* TMUserCenterVC.m */; };
+		A05B935E1E2789AD004CC93C /* TMUserCenterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05B932A1E2789AD004CC93C /* TMUserCenterVC.xib */; };
+		A05B935F1E2789AD004CC93C /* userCenter_ invite.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B932B1E2789AD004CC93C /* userCenter_ invite.png */; };
+		A05B93601E2789AD004CC93C /* userCenter_ wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B932C1E2789AD004CC93C /* userCenter_ wallet.png */; };
+		A05B93611E2789AD004CC93C /* userCenter_auth.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B932D1E2789AD004CC93C /* userCenter_auth.png */; };
+		A05B93621E2789AD004CC93C /* userCenter_collection.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B932E1E2789AD004CC93C /* userCenter_collection.png */; };
+		A05B93631E2789AD004CC93C /* userCenter_head_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B932F1E2789AD004CC93C /* userCenter_head_bg.png */; };
+		A05B93641E2789AD004CC93C /* userCenter_rent_in.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B93301E2789AD004CC93C /* userCenter_rent_in.png */; };
+		A05B93651E2789AD004CC93C /* userCenter_rent_out.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B93311E2789AD004CC93C /* userCenter_rent_out.png */; };
+		A05B93661E2789AD004CC93C /* userCenter_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B93321E2789AD004CC93C /* userCenter_setting.png */; };
+		A05B93671E2789AD004CC93C /* userCenter_topp_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B93331E2789AD004CC93C /* userCenter_topp_bg.png */; };
+		A05B93681E2789AD004CC93C /* userCenter_vip.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B93341E2789AD004CC93C /* userCenter_vip.png */; };
+		A05B93691E2789AD004CC93C /* userCenter_vipCenter.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B93351E2789AD004CC93C /* userCenter_vipCenter.png */; };
+		A05B936A1E2789AD004CC93C /* TMUserCenterTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A05B93381E2789AD004CC93C /* TMUserCenterTableCell.m */; };
+		A05B936B1E2789AD004CC93C /* TMUserCenterTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05B93391E2789AD004CC93C /* TMUserCenterTableCell.xib */; };
+		A05B936C1E2789AD004CC93C /* TMUserInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A05B933C1E2789AD004CC93C /* TMUserInfoVC.m */; };
+		A05B936D1E2789AD004CC93C /* TMUserInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05B933D1E2789AD004CC93C /* TMUserInfoVC.xib */; };
+		A05B936E1E2789AD004CC93C /* TMPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A05B93401E2789AD004CC93C /* TMPickerView.m */; };
+		A05B936F1E2789AD004CC93C /* TMUserInfoTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A05B93421E2789AD004CC93C /* TMUserInfoTableCell.m */; };
+		A05B93701E2789AD004CC93C /* TMUserInfoTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05B93431E2789AD004CC93C /* TMUserInfoTableCell.xib */; };
+		A05B93711E2789AD004CC93C /* userNameChangeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A05B93461E2789AD004CC93C /* userNameChangeVC.m */; };
+		A05B93721E2789AD004CC93C /* userNameChangeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05B93471E2789AD004CC93C /* userNameChangeVC.xib */; };
 		A09C5F491E1E10F600162939 /* TMRegisterInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = A09C5F481E1E10F600162939 /* TMRegisterInputView.m */; };
 		A0C0E5391E1E2A6B001C632C /* tm_reg_dh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C0E5371E1E2A6B001C632C /* tm_reg_dh@2x.png */; };
 		A0C0E53A1E1E2A6B001C632C /* tm_reg_yqr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C0E5381E1E2A6B001C632C /* tm_reg_yqr@2x.png */; };
@@ -546,6 +589,61 @@
 		A05B92851E277364004CC93C /* EaseConversationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseConversationCell.h; sourceTree = "<group>"; };
 		A05B92861E277364004CC93C /* EaseConversationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseConversationCell.m; sourceTree = "<group>"; };
 		A05B92881E277364004CC93C /* EaseUIResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EaseUIResource.bundle; sourceTree = "<group>"; };
+		A05B93061E2789AD004CC93C /* TMBlacklistVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBlacklistVC.h; sourceTree = "<group>"; };
+		A05B93071E2789AD004CC93C /* TMBlacklistVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBlacklistVC.m; sourceTree = "<group>"; };
+		A05B93081E2789AD004CC93C /* TMBlacklistVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMBlacklistVC.xib; sourceTree = "<group>"; };
+		A05B930A1E2789AD004CC93C /* TMBlacklistTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBlacklistTableCell.h; sourceTree = "<group>"; };
+		A05B930B1E2789AD004CC93C /* TMBlacklistTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBlacklistTableCell.m; sourceTree = "<group>"; };
+		A05B930C1E2789AD004CC93C /* TMBlacklistTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMBlacklistTableCell.xib; sourceTree = "<group>"; };
+		A05B930E1E2789AD004CC93C /* TMPayPasswordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMPayPasswordVC.h; sourceTree = "<group>"; };
+		A05B930F1E2789AD004CC93C /* TMPayPasswordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMPayPasswordVC.m; sourceTree = "<group>"; };
+		A05B93101E2789AD004CC93C /* TMPayPasswordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMPayPasswordVC.xib; sourceTree = "<group>"; };
+		A05B93111E2789AD004CC93C /* TMSetPayPasswordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMSetPayPasswordVC.h; sourceTree = "<group>"; };
+		A05B93121E2789AD004CC93C /* TMSetPayPasswordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMSetPayPasswordVC.m; sourceTree = "<group>"; };
+		A05B93131E2789AD004CC93C /* TMSetPayPasswordVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMSetPayPasswordVC.xib; sourceTree = "<group>"; };
+		A05B93161E2789AD004CC93C /* setting_about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting_about.png; sourceTree = "<group>"; };
+		A05B93171E2789AD004CC93C /* setting_blacklist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting_blacklist.png; sourceTree = "<group>"; };
+		A05B93181E2789AD004CC93C /* setting_clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting_clear.png; sourceTree = "<group>"; };
+		A05B93191E2789AD004CC93C /* setting_feedback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting_feedback.png; sourceTree = "<group>"; };
+		A05B931A1E2789AD004CC93C /* setting_friend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting_friend.png; sourceTree = "<group>"; };
+		A05B931B1E2789AD004CC93C /* setting_logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting_logout.png; sourceTree = "<group>"; };
+		A05B931C1E2789AD004CC93C /* setting_password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting_password.png; sourceTree = "<group>"; };
+		A05B931D1E2789AD004CC93C /* TMSettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMSettingVC.h; sourceTree = "<group>"; };
+		A05B931E1E2789AD004CC93C /* TMSettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMSettingVC.m; sourceTree = "<group>"; };
+		A05B931F1E2789AD004CC93C /* TMSettingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMSettingVC.xib; sourceTree = "<group>"; };
+		A05B93211E2789AD004CC93C /* TMSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMSettingCell.h; sourceTree = "<group>"; };
+		A05B93221E2789AD004CC93C /* TMSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMSettingCell.m; sourceTree = "<group>"; };
+		A05B93231E2789AD004CC93C /* TMSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMSettingCell.xib; sourceTree = "<group>"; };
+		A05B93261E2789AD004CC93C /* default_head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_head.png; sourceTree = "<group>"; };
+		A05B93271E2789AD004CC93C /* right_detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_detail.png; sourceTree = "<group>"; };
+		A05B93281E2789AD004CC93C /* TMUserCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMUserCenterVC.h; sourceTree = "<group>"; };
+		A05B93291E2789AD004CC93C /* TMUserCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMUserCenterVC.m; sourceTree = "<group>"; };
+		A05B932A1E2789AD004CC93C /* TMUserCenterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMUserCenterVC.xib; sourceTree = "<group>"; };
+		A05B932B1E2789AD004CC93C /* userCenter_ invite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "userCenter_ invite.png"; sourceTree = "<group>"; };
+		A05B932C1E2789AD004CC93C /* userCenter_ wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "userCenter_ wallet.png"; sourceTree = "<group>"; };
+		A05B932D1E2789AD004CC93C /* userCenter_auth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userCenter_auth.png; sourceTree = "<group>"; };
+		A05B932E1E2789AD004CC93C /* userCenter_collection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userCenter_collection.png; sourceTree = "<group>"; };
+		A05B932F1E2789AD004CC93C /* userCenter_head_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userCenter_head_bg.png; sourceTree = "<group>"; };
+		A05B93301E2789AD004CC93C /* userCenter_rent_in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userCenter_rent_in.png; sourceTree = "<group>"; };
+		A05B93311E2789AD004CC93C /* userCenter_rent_out.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userCenter_rent_out.png; sourceTree = "<group>"; };
+		A05B93321E2789AD004CC93C /* userCenter_setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userCenter_setting.png; sourceTree = "<group>"; };
+		A05B93331E2789AD004CC93C /* userCenter_topp_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userCenter_topp_bg.png; sourceTree = "<group>"; };
+		A05B93341E2789AD004CC93C /* userCenter_vip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userCenter_vip.png; sourceTree = "<group>"; };
+		A05B93351E2789AD004CC93C /* userCenter_vipCenter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userCenter_vipCenter.png; sourceTree = "<group>"; };
+		A05B93371E2789AD004CC93C /* TMUserCenterTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMUserCenterTableCell.h; sourceTree = "<group>"; };
+		A05B93381E2789AD004CC93C /* TMUserCenterTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMUserCenterTableCell.m; sourceTree = "<group>"; };
+		A05B93391E2789AD004CC93C /* TMUserCenterTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMUserCenterTableCell.xib; sourceTree = "<group>"; };
+		A05B933B1E2789AD004CC93C /* TMUserInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMUserInfoVC.h; sourceTree = "<group>"; };
+		A05B933C1E2789AD004CC93C /* TMUserInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMUserInfoVC.m; sourceTree = "<group>"; };
+		A05B933D1E2789AD004CC93C /* TMUserInfoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMUserInfoVC.xib; sourceTree = "<group>"; };
+		A05B933F1E2789AD004CC93C /* TMPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMPickerView.h; sourceTree = "<group>"; };
+		A05B93401E2789AD004CC93C /* TMPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMPickerView.m; sourceTree = "<group>"; };
+		A05B93411E2789AD004CC93C /* TMUserInfoTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMUserInfoTableCell.h; sourceTree = "<group>"; };
+		A05B93421E2789AD004CC93C /* TMUserInfoTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMUserInfoTableCell.m; sourceTree = "<group>"; };
+		A05B93431E2789AD004CC93C /* TMUserInfoTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMUserInfoTableCell.xib; sourceTree = "<group>"; };
+		A05B93451E2789AD004CC93C /* userNameChangeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userNameChangeVC.h; sourceTree = "<group>"; };
+		A05B93461E2789AD004CC93C /* userNameChangeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = userNameChangeVC.m; sourceTree = "<group>"; };
+		A05B93471E2789AD004CC93C /* userNameChangeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = userNameChangeVC.xib; sourceTree = "<group>"; };
 		A09C5F471E1E10F600162939 /* TMRegisterInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMRegisterInputView.h; sourceTree = "<group>"; };
 		A09C5F481E1E10F600162939 /* TMRegisterInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMRegisterInputView.m; sourceTree = "<group>"; };
 		A0C0E5371E1E2A6B001C632C /* tm_reg_dh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tm_reg_dh@2x.png"; sourceTree = "<group>"; };
@@ -1418,6 +1516,164 @@
 			path = resources;
 			sourceTree = "<group>";
 		};
+		A05B93041E2789AD004CC93C /* user */ = {
+			isa = PBXGroup;
+			children = (
+				A05B93051E2789AD004CC93C /* blacklistVC */,
+				A05B930D1E2789AD004CC93C /* payPassWordVC */,
+				A05B93141E2789AD004CC93C /* settingVC */,
+				A05B93241E2789AD004CC93C /* userCenterVC */,
+				A05B933A1E2789AD004CC93C /* userInfoVC */,
+				A05B93441E2789AD004CC93C /* userNameChangeVC */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		A05B93051E2789AD004CC93C /* blacklistVC */ = {
+			isa = PBXGroup;
+			children = (
+				A05B93061E2789AD004CC93C /* TMBlacklistVC.h */,
+				A05B93071E2789AD004CC93C /* TMBlacklistVC.m */,
+				A05B93081E2789AD004CC93C /* TMBlacklistVC.xib */,
+				A05B93091E2789AD004CC93C /* view */,
+			);
+			path = blacklistVC;
+			sourceTree = "<group>";
+		};
+		A05B93091E2789AD004CC93C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A05B930A1E2789AD004CC93C /* TMBlacklistTableCell.h */,
+				A05B930B1E2789AD004CC93C /* TMBlacklistTableCell.m */,
+				A05B930C1E2789AD004CC93C /* TMBlacklistTableCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A05B930D1E2789AD004CC93C /* payPassWordVC */ = {
+			isa = PBXGroup;
+			children = (
+				A05B930E1E2789AD004CC93C /* TMPayPasswordVC.h */,
+				A05B930F1E2789AD004CC93C /* TMPayPasswordVC.m */,
+				A05B93101E2789AD004CC93C /* TMPayPasswordVC.xib */,
+				A05B93111E2789AD004CC93C /* TMSetPayPasswordVC.h */,
+				A05B93121E2789AD004CC93C /* TMSetPayPasswordVC.m */,
+				A05B93131E2789AD004CC93C /* TMSetPayPasswordVC.xib */,
+			);
+			path = payPassWordVC;
+			sourceTree = "<group>";
+		};
+		A05B93141E2789AD004CC93C /* settingVC */ = {
+			isa = PBXGroup;
+			children = (
+				A05B93151E2789AD004CC93C /* res */,
+				A05B931D1E2789AD004CC93C /* TMSettingVC.h */,
+				A05B931E1E2789AD004CC93C /* TMSettingVC.m */,
+				A05B931F1E2789AD004CC93C /* TMSettingVC.xib */,
+				A05B93201E2789AD004CC93C /* view */,
+			);
+			path = settingVC;
+			sourceTree = "<group>";
+		};
+		A05B93151E2789AD004CC93C /* res */ = {
+			isa = PBXGroup;
+			children = (
+				A05B93161E2789AD004CC93C /* setting_about.png */,
+				A05B93171E2789AD004CC93C /* setting_blacklist.png */,
+				A05B93181E2789AD004CC93C /* setting_clear.png */,
+				A05B93191E2789AD004CC93C /* setting_feedback.png */,
+				A05B931A1E2789AD004CC93C /* setting_friend.png */,
+				A05B931B1E2789AD004CC93C /* setting_logout.png */,
+				A05B931C1E2789AD004CC93C /* setting_password.png */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		A05B93201E2789AD004CC93C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A05B93211E2789AD004CC93C /* TMSettingCell.h */,
+				A05B93221E2789AD004CC93C /* TMSettingCell.m */,
+				A05B93231E2789AD004CC93C /* TMSettingCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A05B93241E2789AD004CC93C /* userCenterVC */ = {
+			isa = PBXGroup;
+			children = (
+				A05B93251E2789AD004CC93C /* res */,
+				A05B93361E2789AD004CC93C /* view */,
+			);
+			path = userCenterVC;
+			sourceTree = "<group>";
+		};
+		A05B93251E2789AD004CC93C /* res */ = {
+			isa = PBXGroup;
+			children = (
+				A05B93261E2789AD004CC93C /* default_head.png */,
+				A05B93271E2789AD004CC93C /* right_detail.png */,
+				A05B93281E2789AD004CC93C /* TMUserCenterVC.h */,
+				A05B93291E2789AD004CC93C /* TMUserCenterVC.m */,
+				A05B932A1E2789AD004CC93C /* TMUserCenterVC.xib */,
+				A05B932B1E2789AD004CC93C /* userCenter_ invite.png */,
+				A05B932C1E2789AD004CC93C /* userCenter_ wallet.png */,
+				A05B932D1E2789AD004CC93C /* userCenter_auth.png */,
+				A05B932E1E2789AD004CC93C /* userCenter_collection.png */,
+				A05B932F1E2789AD004CC93C /* userCenter_head_bg.png */,
+				A05B93301E2789AD004CC93C /* userCenter_rent_in.png */,
+				A05B93311E2789AD004CC93C /* userCenter_rent_out.png */,
+				A05B93321E2789AD004CC93C /* userCenter_setting.png */,
+				A05B93331E2789AD004CC93C /* userCenter_topp_bg.png */,
+				A05B93341E2789AD004CC93C /* userCenter_vip.png */,
+				A05B93351E2789AD004CC93C /* userCenter_vipCenter.png */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		A05B93361E2789AD004CC93C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A05B93371E2789AD004CC93C /* TMUserCenterTableCell.h */,
+				A05B93381E2789AD004CC93C /* TMUserCenterTableCell.m */,
+				A05B93391E2789AD004CC93C /* TMUserCenterTableCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A05B933A1E2789AD004CC93C /* userInfoVC */ = {
+			isa = PBXGroup;
+			children = (
+				A05B933B1E2789AD004CC93C /* TMUserInfoVC.h */,
+				A05B933C1E2789AD004CC93C /* TMUserInfoVC.m */,
+				A05B933D1E2789AD004CC93C /* TMUserInfoVC.xib */,
+				A05B933E1E2789AD004CC93C /* view */,
+			);
+			path = userInfoVC;
+			sourceTree = "<group>";
+		};
+		A05B933E1E2789AD004CC93C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A05B933F1E2789AD004CC93C /* TMPickerView.h */,
+				A05B93401E2789AD004CC93C /* TMPickerView.m */,
+				A05B93411E2789AD004CC93C /* TMUserInfoTableCell.h */,
+				A05B93421E2789AD004CC93C /* TMUserInfoTableCell.m */,
+				A05B93431E2789AD004CC93C /* TMUserInfoTableCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A05B93441E2789AD004CC93C /* userNameChangeVC */ = {
+			isa = PBXGroup;
+			children = (
+				A05B93451E2789AD004CC93C /* userNameChangeVC.h */,
+				A05B93461E2789AD004CC93C /* userNameChangeVC.m */,
+				A05B93471E2789AD004CC93C /* userNameChangeVC.xib */,
+			);
+			path = userNameChangeVC;
+			sourceTree = "<group>";
+		};
 		A09C5F461E1E10CE00162939 /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -1575,6 +1831,7 @@
 			isa = PBXGroup;
 			children = (
 				A0F99FDC1E1B930100C94253 /* baseViewContorller */,
+				A05B93041E2789AD004CC93C /* user */,
 				A04871061E27232B009E0228 /* selectMapPointVC */,
 				A053F3821E24EFDB0046FAE6 /* meetVC */,
 				A037F1301E23B0DC00A857ED /* filtrateVC */,
@@ -1788,60 +2045,91 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05B93631E2789AD004CC93C /* userCenter_head_bg.png in Resources */,
 				A02E01D41E1CA1C300C62C61 /* tm_guide1@2x.png in Resources */,
 				A02E01E21E1CBE0D00C62C61 /* icon_btn_bg_red@2x.png in Resources */,
+				A05B93521E2789AD004CC93C /* setting_clear.png in Resources */,
+				A05B93721E2789AD004CC93C /* userNameChangeVC.xib in Resources */,
 				A037F1251E23A4F800A857ED /* tmd_price@2x.png in Resources */,
+				A05B93551E2789AD004CC93C /* setting_logout.png in Resources */,
 				A0F99FF71E1BAD5F00C94253 /* tab_zb@2x.png in Resources */,
 				A0DC34601E2487A30027F844 /* tmf_topSelected@2x.png in Resources */,
+				A05B935B1E2789AD004CC93C /* default_head.png in Resources */,
+				A05B93501E2789AD004CC93C /* setting_about.png in Resources */,
+				A05B935C1E2789AD004CC93C /* right_detail.png in Resources */,
+				A05B934D1E2789AD004CC93C /* TMPayPasswordVC.xib in Resources */,
 				A0F99FF61E1BAD5F00C94253 /* tab_xx@2x.png in Resources */,
+				A05B93531E2789AD004CC93C /* setting_feedback.png in Resources */,
 				A0F99FF81E1BAD5F00C94253 /* tab_zt@2x.png in Resources */,
 				A037F10F1E23739C00A857ED /* tm_btn_other@2x.png in Resources */,
+				A05B93701E2789AD004CC93C /* TMUserInfoTableCell.xib in Resources */,
 				A0C4CB1D1E25D26700879D7E /* tm_header_def@2x.png in Resources */,
 				A0C0E5391E1E2A6B001C632C /* tm_reg_dh@2x.png in Resources */,
+				A05B93511E2789AD004CC93C /* setting_blacklist.png in Resources */,
+				A05B935A1E2789AD004CC93C /* TMSettingCell.xib in Resources */,
+				A05B93611E2789AD004CC93C /* userCenter_auth.png in Resources */,
 				A0DE4F0B1E20E39D00F4E02A /* tm_nav_bg@2x.png in Resources */,
+				A05B93561E2789AD004CC93C /* setting_password.png in Resources */,
+				A05B935E1E2789AD004CC93C /* TMUserCenterVC.xib in Resources */,
 				A037F1101E23739C00A857ED /* tm_btn_selectCity@2x.png in Resources */,
+				A05B936D1E2789AD004CC93C /* TMUserInfoVC.xib in Resources */,
 				A053F36E1E24E0BA0046FAE6 /* citydict.plist in Resources */,
+				A05B935F1E2789AD004CC93C /* userCenter_ invite.png in Resources */,
 				A02E01EC1E1CC49200C62C61 /* login_user@2x.png in Resources */,
 				A0C4CB1E1E25D26700879D7E /* tmm_selext@2x.png in Resources */,
 				A053F37E1E24EAAC0046FAE6 /* MKJFirstViewController.xib in Resources */,
 				A02E02051E1CED7500C62C61 /* tm_reg_db@2x.png in Resources */,
 				A02E01CB1E1C953B00C62C61 /* tab_xx_selected@2x.png in Resources */,
 				A02E01D51E1CA1C300C62C61 /* tm_guide2@2x.png in Resources */,
+				A05B93681E2789AD004CC93C /* userCenter_vip.png in Resources */,
 				A037F11C1E23995200A857ED /* tm_nav_more@2x.png in Resources */,
 				A0C4CB221E25D26700879D7E /* tmm_zfb@2x.png in Resources */,
+				A05B93541E2789AD004CC93C /* setting_friend.png in Resources */,
 				A0F99FFE1E1BB39800C94253 /* tab_zt_selected@2x.png in Resources */,
 				A02E01E31E1CBE0D00C62C61 /* icon_btn_bg@2x.png in Resources */,
 				A02E01D81E1CA2A900C62C61 /* tm_btn_star@2x.png in Resources */,
 				A02E01E41E1CBE0D00C62C61 /* tm_login_topbg@2x.png in Resources */,
+				A05B934F1E2789AD004CC93C /* TMSetPayPasswordVC.xib in Resources */,
 				A02E02071E1CF79400C62C61 /* icon_back@2x.png in Resources */,
 				A0C0E5411E1E2DA4001C632C /* tm_rec_bg@2x.png in Resources */,
 				A0DE4F001E20DD4E00F4E02A /* tm_rec_content@2x.png in Resources */,
 				A0F99FE51E1B9D5A00C94253 /* ad_btn_bg@2x.png in Resources */,
 				A01140D51E15FDA100311731 /* Assets.xcassets in Resources */,
+				A05B936B1E2789AD004CC93C /* TMUserCenterTableCell.xib in Resources */,
 				A05B92D11E277364004CC93C /* MWPhotoBrowser.bundle in Resources */,
 				A0DC345F1E2487A30027F844 /* tmf_topSelect@2x.png in Resources */,
 				A0F99FFD1E1BB39800C94253 /* tab_wd_selected@2x.png in Resources */,
 				A05B92FF1E277364004CC93C /* EaseUIResource.bundle in Resources */,
 				A0C4CB201E25D26700879D7E /* tmm_wx@2x.png in Resources */,
+				A05B93581E2789AD004CC93C /* TMSettingVC.xib in Resources */,
+				A05B93621E2789AD004CC93C /* userCenter_collection.png in Resources */,
 				A0DC345E1E2487A30027F844 /* tmf_right@2x.png in Resources */,
+				A05B93601E2789AD004CC93C /* userCenter_ wallet.png in Resources */,
 				A0C4CB211E25D26700879D7E /* tmm_ye@2x.png in Resources */,
+				A05B93651E2789AD004CC93C /* userCenter_rent_out.png in Resources */,
 				A037F0FD1E23217600A857ED /* nav_item_bg@2x.png in Resources */,
+				A05B93691E2789AD004CC93C /* userCenter_vipCenter.png in Resources */,
 				A0C0E53A1E1E2A6B001C632C /* tm_reg_yqr@2x.png in Resources */,
 				A02E02021E1CED4600C62C61 /* nav_bg@2x.png in Resources */,
 				A02E01D61E1CA1C300C62C61 /* tm_guide3@2x.png in Resources */,
 				A037F1071E235F6400A857ED /* tm_price@2x.png in Resources */,
+				A05B93641E2789AD004CC93C /* userCenter_rent_in.png in Resources */,
 				A037F1271E23A7EC00A857ED /* tmd_dis_mark@2x.png in Resources */,
 				A053F36D1E24E0BA0046FAE6 /* cancelBtn@2x.png in Resources */,
+				A05B93671E2789AD004CC93C /* userCenter_topp_bg.png in Resources */,
 				A037F1051E235DCA00A857ED /* tm_renter_def@2x.png in Resources */,
+				A05B934B1E2789AD004CC93C /* TMBlacklistTableCell.xib in Resources */,
 				A037F10B1E236AC900A857ED /* tm_sex@2x.png in Resources */,
 				A05B91611E276D2B004CC93C /* tm_markVip@2x.png in Resources */,
 				A037F1091E2360EF00A857ED /* tm_btn_collect@2x.png in Resources */,
+				A05B93661E2789AD004CC93C /* userCenter_setting.png in Resources */,
 				A053F3471E24B00A0046FAE6 /* tm_ thumb@2x.png in Resources */,
 				A0F99FE31E1B94B900C94253 /* tm_ad@2x.png in Resources */,
 				A037F12F1E23AFAC00A857ED /* tm_chat@2x.png in Resources */,
 				A037F1111E23739C00A857ED /* tm_btn_serch@2x.png in Resources */,
 				A0F99FFA1E1BAF4A00C94253 /* tab_fx@2x.png in Resources */,
 				A0C4CB1F1E25D26700879D7E /* tmm_selexted@2x.png in Resources */,
+				A05B93491E2789AD004CC93C /* TMBlacklistVC.xib in Resources */,
 				A02E01EB1E1CC49200C62C61 /* login_pwd@2x.png in Resources */,
 				A0F99FF51E1BAD5F00C94253 /* tab_wd@2x.png in Resources */,
 			);
@@ -1918,10 +2206,12 @@
 			files = (
 				A0C4CB321E26290800879D7E /* TMDataPickerView.m in Sources */,
 				A01140CD1E15FDA100311731 /* AppDelegate.mm in Sources */,
+				A05B93481E2789AD004CC93C /* TMBlacklistVC.m in Sources */,
 				A037F12A1E23A98A00A857ED /* TMRenterOtherCell.m in Sources */,
 				A05B92C41E277364004CC93C /* NSIndexPath+PSTCollectionViewAdditions.m in Sources */,
 				A05B92891E277364004CC93C /* EaseUI.m in Sources */,
 				A0DC34641E2491FD0027F844 /* TMFiltrateView.m in Sources */,
+				A05B93571E2789AD004CC93C /* TMSettingVC.m in Sources */,
 				A05B92E91E277364004CC93C /* EaseUserCell.m in Sources */,
 				A05B92F21E277364004CC93C /* EaseBubbleView+Text.m in Sources */,
 				A05B92FE1E277364004CC93C /* EaseConversationCell.m in Sources */,
@@ -1939,6 +2229,7 @@
 				A05B92BE1E277364004CC93C /* UIImage+EMGIF.m in Sources */,
 				A05B92BF1E277364004CC93C /* UIImage+EMMultiFormat.m in Sources */,
 				A053F3701E24E0BA0046FAE6 /* ResultCityController.m in Sources */,
+				A05B93591E2789AD004CC93C /* TMSettingCell.m in Sources */,
 				A05B92EB1E277364004CC93C /* EaseCustomMessageCell.m in Sources */,
 				A05B92E31E277364004CC93C /* EaseConversationListViewController.m in Sources */,
 				A05B92DE1E277364004CC93C /* EaseEmoji.m in Sources */,
@@ -1947,9 +2238,12 @@
 				A05B92E01E277364004CC93C /* EaseEmotionEscape.m in Sources */,
 				A05B92FC1E277364004CC93C /* EaseChatBarMoreView.m in Sources */,
 				A05B92F91E277364004CC93C /* EaseTextView.m in Sources */,
+				A05B936C1E2789AD004CC93C /* TMUserInfoVC.m in Sources */,
+				A05B934C1E2789AD004CC93C /* TMPayPasswordVC.m in Sources */,
 				A05B92B91E277364004CC93C /* EMSDWebImageManager.m in Sources */,
 				A05B92AC1E277364004CC93C /* MWGridCell.m in Sources */,
 				A05B92D71E277364004CC93C /* NSDateFormatter+Category.m in Sources */,
+				A05B934A1E2789AD004CC93C /* TMBlacklistTableCell.m in Sources */,
 				A053F3731E24E0BA0046FAE6 /* CustomSearchView.m in Sources */,
 				A05B92D01E277364004CC93C /* PSTGridLayoutSection.m in Sources */,
 				A05B92FD1E277364004CC93C /* EaseRecordView.m in Sources */,
@@ -1964,10 +2258,12 @@
 				A05B92DB1E277364004CC93C /* EaseChineseToPinyin.m in Sources */,
 				A05B92B01E277364004CC93C /* MWTapDetectingImageView.m in Sources */,
 				A05B92B41E277364004CC93C /* EMSDImageCache.m in Sources */,
+				A05B936A1E2789AD004CC93C /* TMUserCenterTableCell.m in Sources */,
 				A05B92F01E277364004CC93C /* EaseBubbleView+Image.m in Sources */,
 				A05B92C31E277364004CC93C /* UIView+EMWebCacheOperation.m in Sources */,
 				A02E01F51E1CD12100C62C61 /* TMBaseVC.m in Sources */,
 				A05B928A1E277364004CC93C /* EMAudioPlayerUtil.m in Sources */,
+				A05B935D1E2789AD004CC93C /* TMUserCenterVC.m in Sources */,
 				A05B92AD1E277364004CC93C /* MWGridViewController.m in Sources */,
 				A05B92F31E277364004CC93C /* EaseBubbleView+Video.m in Sources */,
 				A0C4CB291E25FF1A00879D7E /* TMMInfoCell.m in Sources */,
@@ -2003,6 +2299,7 @@
 				A05B928E1E277364004CC93C /* EMCDDeviceManager+ProximitySensor.m in Sources */,
 				A02E01DD1E1CBC4C00C62C61 /* loginVC.m in Sources */,
 				A05B92C11E277364004CC93C /* UIImageView+EMHighlightedWebCache.m in Sources */,
+				A05B936F1E2789AD004CC93C /* TMUserInfoTableCell.m in Sources */,
 				A05B92CD1E277364004CC93C /* PSTGridLayoutInfo.m in Sources */,
 				A053F3711E24E0BA0046FAE6 /* CityModel.m in Sources */,
 				A037F1331E23B0F200A857ED /* TMFiltrateVC.m in Sources */,
@@ -2025,6 +2322,7 @@
 				A05B92DA1E277364004CC93C /* UIViewController+HUD.m in Sources */,
 				A053F3851E24EFEE0046FAE6 /* TMMeetVC.m in Sources */,
 				A05B92D61E277364004CC93C /* NSDate+Category.m in Sources */,
+				A05B934E1E2789AD004CC93C /* TMSetPayPasswordVC.m in Sources */,
 				A05B92C01E277364004CC93C /* UIImage+EMWebP.m in Sources */,
 				A0F99FE01E1B93A000C94253 /* TMAdvertisementVC.m in Sources */,
 				A05B92CC1E277364004CC93C /* PSTCollectionViewUpdateItem.m in Sources */,
@@ -2044,8 +2342,10 @@
 				A05B92921E277364004CC93C /* wav.mm in Sources */,
 				A05B92ED1E277364004CC93C /* EaseMessageTimeCell.m in Sources */,
 				A05B92CA1E277364004CC93C /* PSTCollectionViewItemKey.m in Sources */,
+				A05B93711E2789AD004CC93C /* userNameChangeVC.m in Sources */,
 				A05B92E61E277364004CC93C /* EaseRefreshTableViewController.m in Sources */,
 				A05B92F61E277364004CC93C /* EaseChatToolbar.m in Sources */,
+				A05B936E1E2789AD004CC93C /* TMPickerView.m in Sources */,
 				A05B92D31E277364004CC93C /* EaseConversationModel.m in Sources */,
 				A05B92971E277364004CC93C /* MBProgressHUD.m in Sources */,
 				A05B92E51E277364004CC93C /* EaseMessageViewController.m in Sources */,
