@@ -12,6 +12,7 @@
 #import "TMRenterDetialInfoCell.h"
 #import "TMRenterOtherCell.h"
 #import "TMMeetVC.h"
+#import "TMDatePickView.h"
 @interface TMRenterDetailVC ()
 
 @end
@@ -58,7 +59,7 @@
     [mYueTaBtn.titleLabel setFont:DEFAULT_FONT(14)];
     [mYueTaBtn addTarget:self action:@selector(onclickYueBtn:) forControlEvents:UIControlEventTouchUpInside];
     [mYueTaBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [mYueTaBtn setBackgroundColor:[UIColor colorWithHexString:@"ffaec1"]];
+    [mYueTaBtn setBackgroundColor:[UIColor colorWithHexString:@"fb686e"]];
     [self.view addSubview:mYueTaBtn];
     
 }
@@ -139,6 +140,7 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     // [self dismissViewControllerAnimated:YES completion:nil];
+    
 }
 
 @end

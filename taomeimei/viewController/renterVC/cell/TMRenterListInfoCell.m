@@ -18,7 +18,6 @@
     UIImageView  *mImageView;
     UIImageView *mMarkPriceImageView;
     UIImageView *mSexImageView;
-    
     UIButton *mCollectBtn;
     UIView *mLineView;
     

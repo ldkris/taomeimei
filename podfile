@@ -18,4 +18,6 @@ pod 'UMengUShare/Social/QQ'
 pod 'UMengUShare/UI’
 pod 'MJRefresh'
 pod 'SKTagView'
+pod 'Bugly'
+pod 'BaiduMapKit'
 end

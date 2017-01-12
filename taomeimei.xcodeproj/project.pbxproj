@@ -72,6 +72,18 @@
 		A0C0E53A1E1E2A6B001C632C /* tm_reg_yqr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C0E5381E1E2A6B001C632C /* tm_reg_yqr@2x.png */; };
 		A0C0E53E1E1E2AFA001C632C /* TMAgreementVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C0E53D1E1E2AFA001C632C /* TMAgreementVC.m */; };
 		A0C0E5411E1E2DA4001C632C /* tm_rec_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C0E5401E1E2DA4001C632C /* tm_rec_bg@2x.png */; };
+		A0C4CB151E25C91100879D7E /* TMMHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C4CB141E25C91100879D7E /* TMMHeadCell.m */; };
+		A0C4CB1D1E25D26700879D7E /* tm_header_def@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C4CB171E25D26700879D7E /* tm_header_def@2x.png */; };
+		A0C4CB1E1E25D26700879D7E /* tmm_selext@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C4CB181E25D26700879D7E /* tmm_selext@2x.png */; };
+		A0C4CB1F1E25D26700879D7E /* tmm_selexted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C4CB191E25D26700879D7E /* tmm_selexted@2x.png */; };
+		A0C4CB201E25D26700879D7E /* tmm_wx@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C4CB1A1E25D26700879D7E /* tmm_wx@2x.png */; };
+		A0C4CB211E25D26700879D7E /* tmm_ye@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C4CB1B1E25D26700879D7E /* tmm_ye@2x.png */; };
+		A0C4CB221E25D26700879D7E /* tmm_zfb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C4CB1C1E25D26700879D7E /* tmm_zfb@2x.png */; };
+		A0C4CB291E25FF1A00879D7E /* TMMInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C4CB281E25FF1A00879D7E /* TMMInfoCell.m */; };
+		A0C4CB2C1E2603EE00879D7E /* TMMPayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C4CB2B1E2603EE00879D7E /* TMMPayCell.m */; };
+		A0C4CB2F1E261F5200879D7E /* TMDatePickView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C4CB2E1E261F5200879D7E /* TMDatePickView.m */; };
+		A0C4CB321E26290800879D7E /* TMDataPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C4CB311E26290800879D7E /* TMDataPickerView.m */; };
+		A0C4CB361E262E5600879D7E /* WJItemsControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C4CB351E262E5600879D7E /* WJItemsControlView.m */; };
 		A0DC345E1E2487A30027F844 /* tmf_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0DC345B1E2487A30027F844 /* tmf_right@2x.png */; };
 		A0DC345F1E2487A30027F844 /* tmf_topSelect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0DC345C1E2487A30027F844 /* tmf_topSelect@2x.png */; };
 		A0DC34601E2487A30027F844 /* tmf_topSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0DC345D1E2487A30027F844 /* tmf_topSelected@2x.png */; };
@@ -217,6 +229,24 @@
 		A0C0E53C1E1E2AFA001C632C /* TMAgreementVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMAgreementVC.h; sourceTree = "<group>"; };
 		A0C0E53D1E1E2AFA001C632C /* TMAgreementVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMAgreementVC.m; sourceTree = "<group>"; };
 		A0C0E5401E1E2DA4001C632C /* tm_rec_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tm_rec_bg@2x.png"; sourceTree = "<group>"; };
+		A0C4CB131E25C91100879D7E /* TMMHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMMHeadCell.h; sourceTree = "<group>"; };
+		A0C4CB141E25C91100879D7E /* TMMHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMMHeadCell.m; sourceTree = "<group>"; };
+		A0C4CB171E25D26700879D7E /* tm_header_def@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tm_header_def@2x.png"; sourceTree = "<group>"; };
+		A0C4CB181E25D26700879D7E /* tmm_selext@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tmm_selext@2x.png"; sourceTree = "<group>"; };
+		A0C4CB191E25D26700879D7E /* tmm_selexted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tmm_selexted@2x.png"; sourceTree = "<group>"; };
+		A0C4CB1A1E25D26700879D7E /* tmm_wx@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tmm_wx@2x.png"; sourceTree = "<group>"; };
+		A0C4CB1B1E25D26700879D7E /* tmm_ye@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tmm_ye@2x.png"; sourceTree = "<group>"; };
+		A0C4CB1C1E25D26700879D7E /* tmm_zfb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tmm_zfb@2x.png"; sourceTree = "<group>"; };
+		A0C4CB271E25FF1A00879D7E /* TMMInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMMInfoCell.h; sourceTree = "<group>"; };
+		A0C4CB281E25FF1A00879D7E /* TMMInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMMInfoCell.m; sourceTree = "<group>"; };
+		A0C4CB2A1E2603EE00879D7E /* TMMPayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMMPayCell.h; sourceTree = "<group>"; };
+		A0C4CB2B1E2603EE00879D7E /* TMMPayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMMPayCell.m; sourceTree = "<group>"; };
+		A0C4CB2D1E261F5200879D7E /* TMDatePickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMDatePickView.h; sourceTree = "<group>"; };
+		A0C4CB2E1E261F5200879D7E /* TMDatePickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMDatePickView.m; sourceTree = "<group>"; };
+		A0C4CB301E26290800879D7E /* TMDataPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMDataPickerView.h; sourceTree = "<group>"; };
+		A0C4CB311E26290800879D7E /* TMDataPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMDataPickerView.m; sourceTree = "<group>"; };
+		A0C4CB341E262E5600879D7E /* WJItemsControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJItemsControlView.h; sourceTree = "<group>"; };
+		A0C4CB351E262E5600879D7E /* WJItemsControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJItemsControlView.m; sourceTree = "<group>"; };
 		A0DC345B1E2487A30027F844 /* tmf_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tmf_right@2x.png"; sourceTree = "<group>"; };
 		A0DC345C1E2487A30027F844 /* tmf_topSelect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tmf_topSelect@2x.png"; sourceTree = "<group>"; };
 		A0DC345D1E2487A30027F844 /* tmf_topSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tmf_topSelected@2x.png"; sourceTree = "<group>"; };
@@ -490,6 +520,7 @@
 		A053F35A1E24E0340046FAE6 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				A0C4CB331E262E5600879D7E /* WJSegment */,
 				A053F3791E24EA970046FAE6 /* search */,
 				A053F35B1E24E0BA0046FAE6 /* selectCity */,
 			);
@@ -556,6 +587,8 @@
 		A053F3821E24EFDB0046FAE6 /* meetVC */ = {
 			isa = PBXGroup;
 			children = (
+				A0C4CB161E25D26700879D7E /* res */,
+				A0C4CB121E25C8D500879D7E /* cell */,
 				A053F3831E24EFEE0046FAE6 /* TMMeetVC.h */,
 				A053F3841E24EFEE0046FAE6 /* TMMeetVC.m */,
 			);
@@ -588,6 +621,41 @@
 				A0C0E5401E1E2DA4001C632C /* tm_rec_bg@2x.png */,
 			);
 			path = res;
+			sourceTree = "<group>";
+		};
+		A0C4CB121E25C8D500879D7E /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				A0C4CB131E25C91100879D7E /* TMMHeadCell.h */,
+				A0C4CB141E25C91100879D7E /* TMMHeadCell.m */,
+				A0C4CB271E25FF1A00879D7E /* TMMInfoCell.h */,
+				A0C4CB281E25FF1A00879D7E /* TMMInfoCell.m */,
+				A0C4CB2A1E2603EE00879D7E /* TMMPayCell.h */,
+				A0C4CB2B1E2603EE00879D7E /* TMMPayCell.m */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		A0C4CB161E25D26700879D7E /* res */ = {
+			isa = PBXGroup;
+			children = (
+				A0C4CB171E25D26700879D7E /* tm_header_def@2x.png */,
+				A0C4CB181E25D26700879D7E /* tmm_selext@2x.png */,
+				A0C4CB191E25D26700879D7E /* tmm_selexted@2x.png */,
+				A0C4CB1A1E25D26700879D7E /* tmm_wx@2x.png */,
+				A0C4CB1B1E25D26700879D7E /* tmm_ye@2x.png */,
+				A0C4CB1C1E25D26700879D7E /* tmm_zfb@2x.png */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		A0C4CB331E262E5600879D7E /* WJSegment */ = {
+			isa = PBXGroup;
+			children = (
+				A0C4CB341E262E5600879D7E /* WJItemsControlView.h */,
+				A0C4CB351E262E5600879D7E /* WJItemsControlView.m */,
+			);
+			path = WJSegment;
 			sourceTree = "<group>";
 		};
 		A0DC345A1E2487A30027F844 /* res */ = {
@@ -658,6 +726,10 @@
 				A0DE4F151E20E9CD00F4E02A /* TMCollectionViewCell.m */,
 				A037F0FE1E232C9D00A857ED /* TMTableViewCell.h */,
 				A037F0FF1E232C9D00A857ED /* TMTableViewCell.m */,
+				A0C4CB2D1E261F5200879D7E /* TMDatePickView.h */,
+				A0C4CB2E1E261F5200879D7E /* TMDatePickView.m */,
+				A0C4CB301E26290800879D7E /* TMDataPickerView.h */,
+				A0C4CB311E26290800879D7E /* TMDataPickerView.m */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -896,16 +968,19 @@
 				A0F99FF61E1BAD5F00C94253 /* tab_xx@2x.png in Resources */,
 				A0F99FF81E1BAD5F00C94253 /* tab_zt@2x.png in Resources */,
 				A037F10F1E23739C00A857ED /* tm_btn_other@2x.png in Resources */,
+				A0C4CB1D1E25D26700879D7E /* tm_header_def@2x.png in Resources */,
 				A0C0E5391E1E2A6B001C632C /* tm_reg_dh@2x.png in Resources */,
 				A0DE4F0B1E20E39D00F4E02A /* tm_nav_bg@2x.png in Resources */,
 				A037F1101E23739C00A857ED /* tm_btn_selectCity@2x.png in Resources */,
 				A053F36E1E24E0BA0046FAE6 /* citydict.plist in Resources */,
 				A02E01EC1E1CC49200C62C61 /* login_user@2x.png in Resources */,
+				A0C4CB1E1E25D26700879D7E /* tmm_selext@2x.png in Resources */,
 				A053F37E1E24EAAC0046FAE6 /* MKJFirstViewController.xib in Resources */,
 				A02E02051E1CED7500C62C61 /* tm_reg_db@2x.png in Resources */,
 				A02E01CB1E1C953B00C62C61 /* tab_xx_selected@2x.png in Resources */,
 				A02E01D51E1CA1C300C62C61 /* tm_guide2@2x.png in Resources */,
 				A037F11C1E23995200A857ED /* tm_nav_more@2x.png in Resources */,
+				A0C4CB221E25D26700879D7E /* tmm_zfb@2x.png in Resources */,
 				A0F99FFE1E1BB39800C94253 /* tab_zt_selected@2x.png in Resources */,
 				A02E01E31E1CBE0D00C62C61 /* icon_btn_bg@2x.png in Resources */,
 				A02E01D81E1CA2A900C62C61 /* tm_btn_star@2x.png in Resources */,
@@ -917,7 +992,9 @@
 				A01140D51E15FDA100311731 /* Assets.xcassets in Resources */,
 				A0DC345F1E2487A30027F844 /* tmf_topSelect@2x.png in Resources */,
 				A0F99FFD1E1BB39800C94253 /* tab_wd_selected@2x.png in Resources */,
+				A0C4CB201E25D26700879D7E /* tmm_wx@2x.png in Resources */,
 				A0DC345E1E2487A30027F844 /* tmf_right@2x.png in Resources */,
+				A0C4CB211E25D26700879D7E /* tmm_ye@2x.png in Resources */,
 				A037F0FD1E23217600A857ED /* nav_item_bg@2x.png in Resources */,
 				A0C0E53A1E1E2A6B001C632C /* tm_reg_yqr@2x.png in Resources */,
 				A02E02021E1CED4600C62C61 /* nav_bg@2x.png in Resources */,
@@ -933,6 +1010,7 @@
 				A037F12F1E23AFAC00A857ED /* tm_chat@2x.png in Resources */,
 				A037F1111E23739C00A857ED /* tm_btn_serch@2x.png in Resources */,
 				A0F99FFA1E1BAF4A00C94253 /* tab_fx@2x.png in Resources */,
+				A0C4CB1F1E25D26700879D7E /* tmm_selexted@2x.png in Resources */,
 				A02E01EB1E1CC49200C62C61 /* login_pwd@2x.png in Resources */,
 				A0F99FF51E1BAD5F00C94253 /* tab_wd@2x.png in Resources */,
 			);
@@ -1007,6 +1085,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0C4CB321E26290800879D7E /* TMDataPickerView.m in Sources */,
 				A01140CD1E15FDA100311731 /* AppDelegate.m in Sources */,
 				A037F12A1E23A98A00A857ED /* TMRenterOtherCell.m in Sources */,
 				A0DC34641E2491FD0027F844 /* TMFiltrateView.m in Sources */,
@@ -1017,11 +1096,13 @@
 				A053F3731E24E0BA0046FAE6 /* CustomSearchView.m in Sources */,
 				A0DE4F1A1E20ED4B00F4E02A /* TMNavMenuCell.m in Sources */,
 				A02E01F51E1CD12100C62C61 /* TMBaseVC.m in Sources */,
+				A0C4CB291E25FF1A00879D7E /* TMMInfoCell.m in Sources */,
 				A02E01E81E1CBF9300C62C61 /* TMloginInPutView.m in Sources */,
 				A053F3811E24EABC0046FAE6 /* UIImage+ImageCompress.m in Sources */,
 				A053F3581E24D6680046FAE6 /* ASValueTrackingSlider.m in Sources */,
 				A053F37D1E24EAAC0046FAE6 /* MKJFirstViewController.m in Sources */,
 				A053F3591E24D6680046FAE6 /* ASValuePopUpView.m in Sources */,
+				A0C4CB2C1E2603EE00879D7E /* TMMPayCell.m in Sources */,
 				A09C5F491E1E10F600162939 /* TMRegisterInputView.m in Sources */,
 				A02E02001E1CEC6200C62C61 /* TMNavigationController.m in Sources */,
 				A053F3721E24E0BA0046FAE6 /* CityTableViewCell.m in Sources */,
@@ -1035,15 +1116,18 @@
 				A0DE4F081E20E2B200F4E02A /* TMRNavView.m in Sources */,
 				A037F1201E239BBC00A857ED /* TMRenterHeaderCell.m in Sources */,
 				A0F99FEF1E1BA90800C94253 /* TMBaseTabbarVC.m in Sources */,
+				A0C4CB151E25C91100879D7E /* TMMHeadCell.m in Sources */,
 				A053F3851E24EFEE0046FAE6 /* TMMeetVC.m in Sources */,
 				A0F99FE01E1B93A000C94253 /* TMAdvertisementVC.m in Sources */,
 				A01140CA1E15FDA100311731 /* main.m in Sources */,
 				A037F1191E238DCF00A857ED /* TMTransparencyNavBarView.m in Sources */,
 				A02E01FD1E1CEBB900C62C61 /* TMRegisterVC.m in Sources */,
+				A0C4CB2F1E261F5200879D7E /* TMDatePickView.m in Sources */,
 				A0DE4F041E20E27100F4E02A /* TMRenterVC.m in Sources */,
 				A053F36F1E24E0BA0046FAE6 /* CityViewController.m in Sources */,
 				A053F3741E24E0BA0046FAE6 /* CustomTopView.m in Sources */,
 				A037F1151E23802700A857ED /* TMRenterDetailVC.m in Sources */,
+				A0C4CB361E262E5600879D7E /* WJItemsControlView.m in Sources */,
 				A037F1001E232C9D00A857ED /* TMTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

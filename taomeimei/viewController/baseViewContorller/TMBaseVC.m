@@ -67,7 +67,6 @@
     UITableView *mInfoTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStyleGrouped];
     mInfoTableView.rowHeight = UITableViewAutomaticDimension;
     mInfoTableView.estimatedRowHeight = 100;
-    mInfoTableView.tableFooterView = [UIView new];
     [mInfoTableView  setBackgroundColor:[UIColor colorWithHexString:@"f1f1f1"]];
     mInfoTableView.delegate = self;
     mInfoTableView.dataSource = self;
