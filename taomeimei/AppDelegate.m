@@ -22,6 +22,7 @@
         self.window = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, MainScreenFrame_Width, MainScreenFrame_Height)];
         [self.window setBackgroundColor:[UIColor whiteColor]];
     }
+    LDLOG(@"修改修改");
     
     TMAdvertisementVC *mRootVC = [[TMAdvertisementVC alloc]init];
     [self.window setRootViewController:mRootVC];
