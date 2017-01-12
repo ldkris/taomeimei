@@ -9,6 +9,7 @@
 #import "TMRenterVC.h"
 #import "TMRNavView.h"
 #import "TMRenterListInfoCell.h"
+#import "TMRenterNearListCell.h"
 #import "TMRenterDetailVC.h"
 #import "TMFiltrateVC.h"
 #import "CityViewController.h"
@@ -55,7 +56,6 @@
     
     isPush = YES;
     
-    
     float widht = [UIScreen mainScreen].bounds.size.width;
     float heith = [UIScreen mainScreen].bounds.size.height;
     
@@ -65,10 +65,13 @@
     UIScrollView *scroll = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 100, widht, heith-150)];
     scroll.delegate = self;
     scroll.pagingEnabled = YES;
+    scroll.showsVerticalScrollIndicator = NO;
+    scroll.showsHorizontalScrollIndicator = NO;
     scroll.contentSize = CGSizeMake(widht*array.count, 100);
     
     for (int i=0; i<array.count; i++) {
         UITableView *mTablView = [self createTableView];
+        [mTablView setTag:200+i];
         [mTablView setFrame:CGRectMake(widht*i, 0, widht, heith-150)];
         [scroll addSubview:mTablView];
     }
@@ -82,7 +85,6 @@
     config.textColor = [UIColor whiteColor];
     config.selectedColor = [UIColor colorWithHexString:@"ffaec1"];
 
-    
     _itemControlView = [[WJItemsControlView alloc]initWithFrame:CGRectMake(0, 100-40, widht, 44)];
     _itemControlView.tapAnimation = YES;
     _itemControlView.config = config;
@@ -129,17 +131,33 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    TMRenterListInfoCell  *cell = [tableView dequeueReusableCellWithIdentifier:@"TMRenterListInfoCell"];
-    if (!cell) {
-        cell = [[TMRenterListInfoCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"TMRenterListInfoCell"];
+    if (tableView.tag == 201) {
+        TMRenterNearListCell  *cell = [tableView dequeueReusableCellWithIdentifier:@"TMRenterNearListCell"];
+        if (!cell) {
+            cell = [[TMRenterNearListCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"TMRenterNearListCell"];
+        }
+        [cell setMName:@"Mlao_D"];
+        [cell setMPrice:@"200/时"];
+        [cell setMSignature:@"租个男友回家过年吧！"];
+        [cell setIsVip:YES];
+        [cell setMArea:@"300米"];
+        [cell setMProfession:@"自由职业"];
+        [cell setMImage:[UIImage imageNamed:@"tm_renter_def"]];
+        return cell;
+    }else{
+        TMRenterListInfoCell  *cell = [tableView dequeueReusableCellWithIdentifier:@"TMRenterListInfoCell"];
+        if (!cell) {
+            cell = [[TMRenterListInfoCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"TMRenterListInfoCell"];
+        }
+        [cell setMName:@"Mlao_D"];
+        [cell setMPrice:@"200/时"];
+        [cell setMSignature:@"租个男友回家过年吧！"];
+        [cell setMArea:@"重庆"];
+        [cell setIsVip:YES];
+        [cell setMProfession:@"自由职业"];
+        [cell setMImage:[UIImage imageNamed:@"tm_renter_def"]];
+        return cell;
     }
-    [cell setMName:@"Mlao_D"];
-    [cell setMPrice:@"200/时"];
-    [cell setMSignature:@"租个男友回家过年吧！"];
-    [cell setMArea:@"重庆"];
-    [cell setMProfession:@"自由职业"];
-    [cell setMImage:[UIImage imageNamed:@"tm_renter_def"]];
-    return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     TMRenterDetailVC *mRenterDetailVC = [[TMRenterDetailVC alloc]init];

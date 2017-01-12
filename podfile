@@ -20,4 +20,5 @@ pod 'MJRefresh'
 pod 'SKTagView'
 pod 'Bugly'
 pod 'BaiduMapKit'
+#pod 'MWPhotoBrowser'
 end

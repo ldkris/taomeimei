@@ -18,6 +18,8 @@
 -(instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
+        self.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:.5f];
+        
         mContView = [[UIView alloc]init];
         [mContView setBackgroundColor:[UIColor whiteColor]];
         [self addSubview:mContView];
@@ -106,5 +108,10 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
    
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [super touchesBegan:touches withEvent:event];
+    [self removeFromSuperview];
 }
 @end

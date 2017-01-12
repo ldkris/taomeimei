@@ -15,4 +15,5 @@
 @property(nonatomic,retain)NSString *mProfession;
 @property(nonatomic,retain)NSString *mArea;
 @property(nonatomic,retain)UIImage  *mImage;
+@property(nonatomic,assign)BOOL isVip;
 @end

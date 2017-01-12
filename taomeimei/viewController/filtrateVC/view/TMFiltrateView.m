@@ -31,7 +31,7 @@
         [mSlider setThumbImage:[UIImage imageNamed:@"tm_ thumb"] forState:UIControlStateNormal];
         [mSlider setThumbImage:[UIImage imageNamed:@"tm_ thumb"] forState:UIControlStateFocused];
         [mSlider setMaxFractionDigitsDisplayed:0];
-        mSlider.popUpViewColor = [UIColor colorWithHexString:@"ffaec1"];
+        mSlider.popUpViewColor = [UIColor colorWithHexString:@"fb686e"];
         mSlider.font = [UIFont fontWithName:@"Menlo-Bold" size:22];
         mSlider.textColor = [UIColor whiteColor];
         [self addSubview:mSlider];

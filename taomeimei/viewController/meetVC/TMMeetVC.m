@@ -12,6 +12,7 @@
 #import "TMMPayCell.h"
 #import "TMDatePickView.h"
 #import "TMDataPickerView.h"
+#import "TMSelectMapPointVC.h"
 @interface TMMeetVC (){
     UITableView *mInfoTableView;
     UIView *mtotalView;
@@ -187,8 +188,9 @@
             make.left.right.top.bottom.mas_equalTo(0);
         }];
     }
-    
-
-
+    if (indexPath.section == 1 && indexPath.row == 2) {
+        TMSelectMapPointVC *mSelectVC = [[TMSelectMapPointVC alloc]init];
+        [self.navigationController pushViewController:mSelectVC animated:YES];
+    }
 }
 @end
