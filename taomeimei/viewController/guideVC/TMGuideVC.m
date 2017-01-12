@@ -10,6 +10,7 @@
 #import "TMBaseTabbarVC.h"
 #import "TMNavigationController.h"
 #import "TMRenterVC.h"
+#import "TMUserCenterVC.h"
 @interface TMGuideVC ()
 @property(nonatomic,retain)UIScrollView *mGuideScrollView;
 @end
@@ -99,9 +100,21 @@
     TMRenterVC *mRenterVC  = [[TMRenterVC alloc]init];
     TMNavigationController *mRenterNavVC = [[TMNavigationController alloc]initWithRootViewController:mRenterVC];
     
+    TMUserCenterVC *userCenterVC = [[TMUserCenterVC alloc] initWithNibName:@"TMUserCenterVC" bundle:nil];
+    TMNavigationController *userCenterNavVC = [[TMNavigationController alloc] initWithRootViewController:userCenterVC];
+    
+    UIViewController *mRenterVC1  = [[UIViewController alloc]init];
+    TMNavigationController *mRenterNavVC1 = [[TMNavigationController alloc]initWithRootViewController:mRenterVC1];
+    
+    UIViewController *mRenterVC2  = [[UIViewController alloc]init];
+    TMNavigationController *mRenterNavVC2 = [[TMNavigationController alloc]initWithRootViewController:mRenterVC2];
+    
+    UIViewController *mRenterVC3  = [[UIViewController alloc]init];
+    TMNavigationController *mRenterNavVC3 = [[TMNavigationController alloc]initWithRootViewController:mRenterVC3];
+    
     TMBaseTabbarVC *mTabVC = [[TMBaseTabbarVC alloc]init];
     [mTabVC setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-    [mTabVC setViewControllers:@[mRenterNavVC]];
+    [mTabVC setViewControllers:@[mRenterNavVC,mRenterNavVC1,mRenterNavVC2,mRenterNavVC3,userCenterNavVC]];
     [self presentViewController:mTabVC animated:YES completion:nil];
 }
 

@@ -86,11 +86,17 @@
     TMNavigationController *userCenterNavVC = [[TMNavigationController alloc] initWithRootViewController:userCenterVC];
     
     UIViewController *mRenterVC1  = [[UIViewController alloc]init];
-    TMNavigationController *mRenterNavVC1 = [[TMNavigationController alloc]initWithRootViewController:mRenterVC];
+    TMNavigationController *mRenterNavVC1 = [[TMNavigationController alloc]initWithRootViewController:mRenterVC1];
+    
+    UIViewController *mRenterVC2  = [[UIViewController alloc]init];
+    TMNavigationController *mRenterNavVC2 = [[TMNavigationController alloc]initWithRootViewController:mRenterVC2];
+    
+    UIViewController *mRenterVC3  = [[UIViewController alloc]init];
+    TMNavigationController *mRenterNavVC3 = [[TMNavigationController alloc]initWithRootViewController:mRenterVC3];
     
     TMBaseTabbarVC *mTabVC = [[TMBaseTabbarVC alloc]init];
     [mTabVC setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-    [mTabVC setViewControllers:@[mRenterNavVC,userCenterNavVC]];
+    [mTabVC setViewControllers:@[mRenterNavVC,mRenterNavVC1,mRenterNavVC2,mRenterNavVC3,userCenterNavVC]];
     [self presentViewController:mTabVC animated:YES completion:nil];
     
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
