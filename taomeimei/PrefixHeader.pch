@@ -31,7 +31,12 @@
 #import <BaiduMapAPI_Radar/BMKRadarComponent.h>
 #import <BaiduMapAPI_Search/BMKSearchComponent.h>
 #import <BaiduMapAPI_Utils/BMKUtilsComponent.h>
-
+#import <UMSocialQQHandler.h>
+#import <UMSocialWechatHandler.h>
+#import <UMSocialCore/UMSocialCore.h>
+#import <UMSocialUIManager.h>
+#import <EMSDK.h>
+#import "EaseUI.h"
 #import "UIColor+HexString.h"
 #import "TMBaseVC.h"
 #import "TMCollectionViewCell.h"

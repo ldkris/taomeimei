@@ -12,6 +12,8 @@
 		A01140D51E15FDA100311731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A01140D41E15FDA100311731 /* Assets.xcassets */; };
 		A01140E31E15FDA100311731 /* taomeimeiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A01140E21E15FDA100311731 /* taomeimeiTests.m */; };
 		A01140EE1E15FDA100311731 /* taomeimeiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A01140ED1E15FDA100311731 /* taomeimeiUITests.m */; };
+		A02058761E28BCFF009F1A5F /* TMChatListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A02058721E28BCFF009F1A5F /* TMChatListVC.m */; };
+		A02058771E28BCFF009F1A5F /* TMChatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A02058751E28BCFF009F1A5F /* TMChatVC.m */; };
 		A02E01CB1E1C953B00C62C61 /* tab_xx_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A02E01CA1E1C953B00C62C61 /* tab_xx_selected@2x.png */; };
 		A02E01CF1E1C968C00C62C61 /* TMGuideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A02E01CE1E1C968C00C62C61 /* TMGuideVC.m */; };
 		A02E01D41E1CA1C300C62C61 /* tm_guide1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A02E01D11E1CA1C300C62C61 /* tm_guide1@2x.png */; };
@@ -287,6 +289,10 @@
 		A01140E91E15FDA100311731 /* taomeimeiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = taomeimeiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A01140ED1E15FDA100311731 /* taomeimeiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = taomeimeiUITests.m; sourceTree = "<group>"; };
 		A01140EF1E15FDA100311731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A02058711E28BCFF009F1A5F /* TMChatListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMChatListVC.h; sourceTree = "<group>"; };
+		A02058721E28BCFF009F1A5F /* TMChatListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMChatListVC.m; sourceTree = "<group>"; };
+		A02058741E28BCFF009F1A5F /* TMChatVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMChatVC.h; sourceTree = "<group>"; };
+		A02058751E28BCFF009F1A5F /* TMChatVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMChatVC.m; sourceTree = "<group>"; };
 		A02E01CA1E1C953B00C62C61 /* tab_xx_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_xx_selected@2x.png"; sourceTree = "<group>"; };
 		A02E01CD1E1C968C00C62C61 /* TMGuideVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMGuideVC.h; sourceTree = "<group>"; };
 		A02E01CE1E1C968C00C62C61 /* TMGuideVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMGuideVC.m; sourceTree = "<group>"; };
@@ -810,6 +816,24 @@
 				A01140EF1E15FDA100311731 /* Info.plist */,
 			);
 			path = taomeimeiUITests;
+			sourceTree = "<group>";
+		};
+		A02058701E28BCFF009F1A5F /* chatListVC */ = {
+			isa = PBXGroup;
+			children = (
+				A02058711E28BCFF009F1A5F /* TMChatListVC.h */,
+				A02058721E28BCFF009F1A5F /* TMChatListVC.m */,
+			);
+			path = chatListVC;
+			sourceTree = "<group>";
+		};
+		A02058731E28BCFF009F1A5F /* chatVC */ = {
+			isa = PBXGroup;
+			children = (
+				A02058741E28BCFF009F1A5F /* TMChatVC.h */,
+				A02058751E28BCFF009F1A5F /* TMChatVC.m */,
+			);
+			path = chatVC;
 			sourceTree = "<group>";
 		};
 		A02E01CC1E1C967500C62C61 /* guideVC */ = {
@@ -1830,6 +1854,8 @@
 		A0F99FD51E1B8FF900C94253 /* viewController */ = {
 			isa = PBXGroup;
 			children = (
+				A02058701E28BCFF009F1A5F /* chatListVC */,
+				A02058731E28BCFF009F1A5F /* chatVC */,
 				A0F99FDC1E1B930100C94253 /* baseViewContorller */,
 				A05B93041E2789AD004CC93C /* user */,
 				A04871061E27232B009E0228 /* selectMapPointVC */,
@@ -2321,6 +2347,7 @@
 				A05B92DF1E277364004CC93C /* EaseEmojiEmoticons.m in Sources */,
 				A05B92DA1E277364004CC93C /* UIViewController+HUD.m in Sources */,
 				A053F3851E24EFEE0046FAE6 /* TMMeetVC.m in Sources */,
+				A02058761E28BCFF009F1A5F /* TMChatListVC.m in Sources */,
 				A05B92D61E277364004CC93C /* NSDate+Category.m in Sources */,
 				A05B934E1E2789AD004CC93C /* TMSetPayPasswordVC.m in Sources */,
 				A05B92C01E277364004CC93C /* UIImage+EMWebP.m in Sources */,
@@ -2342,6 +2369,7 @@
 				A05B92921E277364004CC93C /* wav.mm in Sources */,
 				A05B92ED1E277364004CC93C /* EaseMessageTimeCell.m in Sources */,
 				A05B92CA1E277364004CC93C /* PSTCollectionViewItemKey.m in Sources */,
+				A02058771E28BCFF009F1A5F /* TMChatVC.m in Sources */,
 				A05B93711E2789AD004CC93C /* userNameChangeVC.m in Sources */,
 				A05B92E61E277364004CC93C /* EaseRefreshTableViewController.m in Sources */,
 				A05B92F61E277364004CC93C /* EaseChatToolbar.m in Sources */,

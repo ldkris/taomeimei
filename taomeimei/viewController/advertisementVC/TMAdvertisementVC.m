@@ -14,6 +14,7 @@
 #import "loginVC.h"
 #import "TMUserCenterVC.h"
 #import "TMRenterVC.h"
+#import "TMChatListVC.h"
 @interface TMAdvertisementVC ()
 @property(nonatomic,strong)UIImageView *mBgView;
 @property(nonatomic,strong)UIButton *mTGBtn;
@@ -85,8 +86,8 @@
     TMUserCenterVC *userCenterVC = [[TMUserCenterVC alloc] initWithNibName:@"TMUserCenterVC" bundle:nil];
     TMNavigationController *userCenterNavVC = [[TMNavigationController alloc] initWithRootViewController:userCenterVC];
     
-    UIViewController *mRenterVC1  = [[UIViewController alloc]init];
-    TMNavigationController *mRenterNavVC1 = [[TMNavigationController alloc]initWithRootViewController:mRenterVC1];
+    TMChatListVC *mChatListVC  = [[TMChatListVC alloc]init];
+    TMNavigationController *mChatListNavVC = [[TMNavigationController alloc]initWithRootViewController:mChatListVC];
     
     UIViewController *mRenterVC2  = [[UIViewController alloc]init];
     TMNavigationController *mRenterNavVC2 = [[TMNavigationController alloc]initWithRootViewController:mRenterVC2];
@@ -96,24 +97,24 @@
     
     TMBaseTabbarVC *mTabVC = [[TMBaseTabbarVC alloc]init];
     [mTabVC setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-    [mTabVC setViewControllers:@[mRenterNavVC,mRenterNavVC1,mRenterNavVC2,mRenterNavVC3,userCenterNavVC]];
+    [mTabVC setViewControllers:@[mRenterNavVC,mRenterNavVC2,mRenterNavVC3,mChatListNavVC,userCenterNavVC]];
     [self presentViewController:mTabVC animated:YES completion:nil];
     
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        loginVC *mGuideVc = [[loginVC alloc]init];
-//       TMNavigationController *mNav = [[TMNavigationController alloc]initWithRootViewController:mGuideVc];
-//       [mGuideVc setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-//       [mTabVC presentViewController:mNav animated:YES completion:nil];
-//   });
+    //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    //        loginVC *mGuideVc = [[loginVC alloc]init];
+    //       TMNavigationController *mNav = [[TMNavigationController alloc]initWithRootViewController:mGuideVc];
+    //       [mGuideVc setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+    //       [mTabVC presentViewController:mNav animated:YES completion:nil];
+    //   });
 }
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
