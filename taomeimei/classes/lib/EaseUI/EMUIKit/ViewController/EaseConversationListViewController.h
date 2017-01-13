@@ -93,6 +93,5 @@ typedef NS_ENUM(int, DXDeleteConvesationType) {
  @result
  */
 - (void)refreshAndSortView;
-- (NSString *)_latestMessageTitleForConversationModel:(id<IConversationModel>)conversationModel;
-- (NSString *)_latestMessageTimeForConversationModel:(id<IConversationModel>)conversationModel;
+
 @end

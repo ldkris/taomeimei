@@ -51,13 +51,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "taomeimei/viewController/advertisementVC/TMAdvertisementVC.m"
-            timestampString = "505909992.50916"
+            filePath = "taomeimei/viewController/chatVC/Call/DemoCallManager.m"
+            timestampString = "505990014.757827"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "-onclickTGBtn:"
+            startingLineNumber = "301"
+            endingLineNumber = "301"
+            landmarkName = "-makeCallWithUsername:type:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

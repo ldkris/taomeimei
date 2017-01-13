@@ -106,7 +106,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-## HyphenateLite_CN
+## Hyphenate_CN
 
 Copyright (c) 2016 Hyphenate Inc.
 

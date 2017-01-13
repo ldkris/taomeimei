@@ -18,7 +18,7 @@ PODS:
   - Bugly (2.4.2)
   - GTMBase64 (1.0.0)
   - HappyDNS (0.3.10)
-  - HyphenateLite_CN (3.2.0)
+  - Hyphenate_CN (3.2.2.2)
   - ImagePlayerView (2.0.2)
   - JPush-iOS-SDK (2.2.0)
   - Mantle (2.1.0):
@@ -50,7 +50,7 @@ DEPENDENCIES:
   - BaiduMapKit
   - Bugly
   - GTMBase64
-  - HyphenateLite_CN
+  - Hyphenate_CN (~> 3.2.2.2)
   - ImagePlayerView
   - JPush-iOS-SDK
   - Mantle
@@ -71,7 +71,7 @@ SPEC CHECKSUMS:
   Bugly: b09cd3c7e54048a0e079be88a7a99610f14eab8f
   GTMBase64: 0da7372e95f5171f3f652db38cde6716f8eb5e24
   HappyDNS: 06a9fed2796663fd87626dbf02552933265bf059
-  HyphenateLite_CN: b1b023ca05b254f495924711158b3112abf37c04
+  Hyphenate_CN: fb0ecb6bce81a8e784ee02e9e2c0ddfba9a365d1
   ImagePlayerView: e162d73d3a1d427a43dc6a52d2c0baf4c7e226f8
   JPush-iOS-SDK: 44ae7a71c04ff0b08031451d985993ece83acadf
   Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
@@ -84,6 +84,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   UMengUShare: f231fc086d789d4e560a5090dcc13a2db15c686d
 
-PODFILE CHECKSUM: 7c82330be428d41a364cb73bcf5cd1be01b7af1c
+PODFILE CHECKSUM: 432d55c2994e6f90975be2f9e587f2d1f885f23d
 
 COCOAPODS: 1.0.1
