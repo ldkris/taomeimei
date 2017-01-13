@@ -141,7 +141,7 @@
     [[EaseChatBarMoreView appearance] setMoreViewBackgroundColor:[UIColor colorWithRed:240 / 255.0 green:242 / 255.0 blue:247 / 255.0 alpha:1.0]];
     
     [self tableViewDidTriggerHeaderRefresh];
-    
+    [self setupEmotion];
 }
 
 - (void)setupEmotion
@@ -190,10 +190,6 @@
         [self _scrollViewToBottom:NO];
     }
     self.scrollToBottomWhenAppear = YES;
-    
-    EaseEmotionManager * manager = [[EaseEmotionManager alloc] initWithType:EMEmotionDefault emotionRow:3 emotionCol:7 emotions:[EaseEmoji allEmoji]];
-    
-    [self.faceView setEmotionManagers:@[manager]];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -1738,7 +1734,11 @@
                         progress:nil];
     
     __weak typeof(self) weakself = self;
-    [[EMClient sharedClient].chatManager sendMessage:message progress:nil completion:^(EMMessage *aMessage, EMError *aError) {
+    [[EMClient sharedClient].chatManager sendMessage:message progress:^(int progress) {
+        if (weakself.dataSource && [weakself.dataSource respondsToSelector:@selector(messageViewController:updateProgress:messageModel:messageBody:)]) {
+            [weakself.dataSource messageViewController:self updateProgress:progress messageModel:nil messageBody:message.body];
+        }
+    } completion:^(EMMessage *aMessage, EMError *aError) {
         if (!aError) {
             [weakself _refreshAfterSentMessage:aMessage];
         }

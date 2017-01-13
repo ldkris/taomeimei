@@ -121,7 +121,7 @@ CGFloat const EaseUserCellPadding = 10;
        self.titleLabel.text = _model.buddy;
     }
     
-    if (![_model.avatarURLPath isEqual:[NSNull null]] && [_model.avatarURLPath length] > 0){
+    if ([_model.avatarURLPath length] > 0){
         [self.avatarView.imageView sd_setImageWithURL:[NSURL URLWithString:_model.avatarURLPath] placeholderImage:_model.avatarImage];
     } else {
         if (_model.avatarImage) {

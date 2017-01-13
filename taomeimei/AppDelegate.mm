@@ -11,7 +11,8 @@
 #import <UserNotifications/UserNotifications.h>
 #import "TMBaseTabbarVC.h"
 #import "TMChatListVC.h"
-@interface AppDelegate ()<EMClientDelegate,EMChatManagerDelegate,EMContactManagerDelegate,EMGroupManagerDelegate,EMChatroomManagerDelegate>{
+#import "DemoCallManager.h"
+@interface AppDelegate ()<EMClientDelegate,EMChatManagerDelegate,EMContactManagerDelegate,EMGroupManagerDelegate,EMChatroomManagerDelegate,EMCallManagerDelegate>{
     BMKLocationService* _locService;
     BMKMapManager* _mapManager;
 }
@@ -112,7 +113,9 @@
                     [[EMClient sharedClient] addDelegate:(id)self delegateQueue:nil];
                     [[EMClient sharedClient] addDelegate:(id)self delegateQueue:nil];
                     [[EMClient sharedClient].chatManager addDelegate:(id)self];
+                    [[EMClient sharedClient].callManager addDelegate:(id)self delegateQueue:nil];
                     
+                     [DemoCallManager sharedManager];
                 }
             }];
         }

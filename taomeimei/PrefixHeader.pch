@@ -35,9 +35,13 @@
 #import <UMSocialWechatHandler.h>
 #import <UMSocialCore/UMSocialCore.h>
 #import <UMSocialUIManager.h>
-#import <EMSDK.h>
+
+ #import <EMSDKFull.h>
 #import "EaseUI.h"
+
 #import "UIColor+HexString.h"
 #import "TMBaseVC.h"
 #import "TMCollectionViewCell.h"
+
+#define DEMO_CALL 1
 #endif
