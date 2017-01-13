@@ -1,48 +1,36 @@
 //
-//  TMBlacklistVC.m
+//  TMInviteListVC.m
 //  taomeimei
 //
-//  Created by zfl－mac on 2017/1/11.
+//  Created by zfl－mac on 2017/1/13.
 //  Copyright © 2017年 刘冬. All rights reserved.
 //
 
-#import "TMBlacklistVC.h"
+#import "TMInviteListVC.h"
 #import "TMBlacklistTableCell.h"
 
-@interface TMBlacklistVC ()
+@interface TMInviteListVC ()
 @property (nonatomic, strong) NSMutableArray *dataArray;
 @end
 
-@implementation TMBlacklistVC
+@implementation TMInviteListVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"黑名单";
+    self.title = @"邀请记录";
     self.dataArray = [NSMutableArray arrayWithArray:@[@"",@"",@"",@"",@"",@"",@"",@"",@"",@""]];
+    UITableView *tablewView = [self createTableView];
+    [self.view addSubview:tablewView];
+    [tablewView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.bottom.right.mas_equalTo(0);
+    }];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [self.navigationController setNavigationBarHidden:NO animated:animated];
     [super viewWillAppear:animated];
     [self hideZJTbar];
-}
-
-
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-
-- (NSString *)tableView:(UITableView *)tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return @"取消拉黑";
-}
-
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    // 从数据源中删除
-    [self.dataArray removeObjectAtIndex:indexPath.row];
-    // 从列表中删除
-    [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -71,9 +59,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-
+    
 }
-
 
 
 - (void)didReceiveMemoryWarning {

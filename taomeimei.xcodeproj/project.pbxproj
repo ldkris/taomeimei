@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A8754481E28713B000F77B0 /* TMCloseAddressBookVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8754461E28713B000F77B0 /* TMCloseAddressBookVC.m */; };
+		5A8754491E28713B000F77B0 /* TMCloseAddressBookVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A8754471E28713B000F77B0 /* TMCloseAddressBookVC.xib */; };
+		5A87544E1E287473000F77B0 /* TMFeedBackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A87544C1E287473000F77B0 /* TMFeedBackVC.m */; };
+		5A87544F1E287473000F77B0 /* TMFeedBackVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A87544D1E287473000F77B0 /* TMFeedBackVC.xib */; };
+		5A8754561E28836B000F77B0 /* TMAboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8754541E28836B000F77B0 /* TMAboutVC.m */; };
+		5A8754571E28836B000F77B0 /* TMAboutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A8754551E28836B000F77B0 /* TMAboutVC.xib */; };
+		5A87545A1E288E85000F77B0 /* feedback_select.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A8754581E288E85000F77B0 /* feedback_select.png */; };
+		5A87545B1E288E85000F77B0 /* feedback_unselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A8754591E288E85000F77B0 /* feedback_unselect.png */; };
+		5A87545F1E289F7D000F77B0 /* about_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A87545C1E289F7C000F77B0 /* about_logo.png */; };
+		5A8754601E289F7D000F77B0 /* about_copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A87545D1E289F7C000F77B0 /* about_copy.png */; };
+		5A8754611E289F7D000F77B0 /* about_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A87545E1E289F7C000F77B0 /* about_bg.png */; };
+		5A8754651E28AF4F000F77B0 /* TMUserCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8754631E28AF4F000F77B0 /* TMUserCenterVC.m */; };
+		5A8754661E28AF4F000F77B0 /* TMUserCenterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A8754641E28AF4F000F77B0 /* TMUserCenterVC.xib */; };
+		5A87546C1E28B090000F77B0 /* TMInviteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A87546A1E28B090000F77B0 /* TMInviteVC.m */; };
+		5A87546D1E28B090000F77B0 /* TMInviteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A87546B1E28B090000F77B0 /* TMInviteVC.xib */; };
+		5A8754701E28BB01000F77B0 /* invite_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A87546E1E28BB01000F77B0 /* invite_bg.png */; };
+		5A8754711E28BB01000F77B0 /* invite_list_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A87546F1E28BB01000F77B0 /* invite_list_btn.png */; };
+		5A87547B1E28C512000F77B0 /* TMInviteListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8754791E28C512000F77B0 /* TMInviteListVC.m */; };
+		5A87547C1E28C512000F77B0 /* TMInviteListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A87547A1E28C512000F77B0 /* TMInviteListVC.xib */; };
 		A01140CA1E15FDA100311731 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A01140C91E15FDA100311731 /* main.m */; };
 		A01140CD1E15FDA100311731 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = A01140CC1E15FDA100311731 /* AppDelegate.mm */; };
 		A01140D51E15FDA100311731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A01140D41E15FDA100311731 /* Assets.xcassets */; };
@@ -191,8 +210,6 @@
 		A05B935A1E2789AD004CC93C /* TMSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05B93231E2789AD004CC93C /* TMSettingCell.xib */; };
 		A05B935B1E2789AD004CC93C /* default_head.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B93261E2789AD004CC93C /* default_head.png */; };
 		A05B935C1E2789AD004CC93C /* right_detail.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B93271E2789AD004CC93C /* right_detail.png */; };
-		A05B935D1E2789AD004CC93C /* TMUserCenterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A05B93291E2789AD004CC93C /* TMUserCenterVC.m */; };
-		A05B935E1E2789AD004CC93C /* TMUserCenterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A05B932A1E2789AD004CC93C /* TMUserCenterVC.xib */; };
 		A05B935F1E2789AD004CC93C /* userCenter_ invite.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B932B1E2789AD004CC93C /* userCenter_ invite.png */; };
 		A05B93601E2789AD004CC93C /* userCenter_ wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B932C1E2789AD004CC93C /* userCenter_ wallet.png */; };
 		A05B93611E2789AD004CC93C /* userCenter_auth.png in Resources */ = {isa = PBXBuildFile; fileRef = A05B932D1E2789AD004CC93C /* userCenter_auth.png */; };
@@ -273,6 +290,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A8754451E28713B000F77B0 /* TMCloseAddressBookVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCloseAddressBookVC.h; sourceTree = "<group>"; };
+		5A8754461E28713B000F77B0 /* TMCloseAddressBookVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMCloseAddressBookVC.m; sourceTree = "<group>"; };
+		5A8754471E28713B000F77B0 /* TMCloseAddressBookVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMCloseAddressBookVC.xib; sourceTree = "<group>"; };
+		5A87544B1E287473000F77B0 /* TMFeedBackVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMFeedBackVC.h; sourceTree = "<group>"; };
+		5A87544C1E287473000F77B0 /* TMFeedBackVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMFeedBackVC.m; sourceTree = "<group>"; };
+		5A87544D1E287473000F77B0 /* TMFeedBackVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMFeedBackVC.xib; sourceTree = "<group>"; };
+		5A8754531E28836B000F77B0 /* TMAboutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMAboutVC.h; sourceTree = "<group>"; };
+		5A8754541E28836B000F77B0 /* TMAboutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMAboutVC.m; sourceTree = "<group>"; };
+		5A8754551E28836B000F77B0 /* TMAboutVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMAboutVC.xib; sourceTree = "<group>"; };
+		5A8754581E288E85000F77B0 /* feedback_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feedback_select.png; sourceTree = "<group>"; };
+		5A8754591E288E85000F77B0 /* feedback_unselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feedback_unselect.png; sourceTree = "<group>"; };
+		5A87545C1E289F7C000F77B0 /* about_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_logo.png; sourceTree = "<group>"; };
+		5A87545D1E289F7C000F77B0 /* about_copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_copy.png; sourceTree = "<group>"; };
+		5A87545E1E289F7C000F77B0 /* about_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_bg.png; sourceTree = "<group>"; };
+		5A8754621E28AF4F000F77B0 /* TMUserCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMUserCenterVC.h; sourceTree = "<group>"; };
+		5A8754631E28AF4F000F77B0 /* TMUserCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMUserCenterVC.m; sourceTree = "<group>"; };
+		5A8754641E28AF4F000F77B0 /* TMUserCenterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMUserCenterVC.xib; sourceTree = "<group>"; };
+		5A8754691E28B090000F77B0 /* TMInviteVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMInviteVC.h; sourceTree = "<group>"; };
+		5A87546A1E28B090000F77B0 /* TMInviteVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMInviteVC.m; sourceTree = "<group>"; };
+		5A87546B1E28B090000F77B0 /* TMInviteVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMInviteVC.xib; sourceTree = "<group>"; };
+		5A87546E1E28BB01000F77B0 /* invite_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = invite_bg.png; sourceTree = "<group>"; };
+		5A87546F1E28BB01000F77B0 /* invite_list_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = invite_list_btn.png; sourceTree = "<group>"; };
+		5A8754781E28C512000F77B0 /* TMInviteListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMInviteListVC.h; sourceTree = "<group>"; };
+		5A8754791E28C512000F77B0 /* TMInviteListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMInviteListVC.m; sourceTree = "<group>"; };
+		5A87547A1E28C512000F77B0 /* TMInviteListVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMInviteListVC.xib; sourceTree = "<group>"; };
 		7F1ADF3943E7BFCA7389742B /* libPods-taomeimei.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-taomeimei.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF007773429A3205554AC23 /* Pods-taomeimei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taomeimei.release.xcconfig"; path = "Pods/Target Support Files/Pods-taomeimei/Pods-taomeimei.release.xcconfig"; sourceTree = "<group>"; };
 		A01140C51E15FDA100311731 /* taomeimei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taomeimei.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -616,9 +658,6 @@
 		A05B93231E2789AD004CC93C /* TMSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMSettingCell.xib; sourceTree = "<group>"; };
 		A05B93261E2789AD004CC93C /* default_head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_head.png; sourceTree = "<group>"; };
 		A05B93271E2789AD004CC93C /* right_detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_detail.png; sourceTree = "<group>"; };
-		A05B93281E2789AD004CC93C /* TMUserCenterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMUserCenterVC.h; sourceTree = "<group>"; };
-		A05B93291E2789AD004CC93C /* TMUserCenterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMUserCenterVC.m; sourceTree = "<group>"; };
-		A05B932A1E2789AD004CC93C /* TMUserCenterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TMUserCenterVC.xib; sourceTree = "<group>"; };
 		A05B932B1E2789AD004CC93C /* userCenter_ invite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "userCenter_ invite.png"; sourceTree = "<group>"; };
 		A05B932C1E2789AD004CC93C /* userCenter_ wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "userCenter_ wallet.png"; sourceTree = "<group>"; };
 		A05B932D1E2789AD004CC93C /* userCenter_auth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userCenter_auth.png; sourceTree = "<group>"; };
@@ -738,6 +777,87 @@
 				7F1ADF3943E7BFCA7389742B /* libPods-taomeimei.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A8754441E28710F000F77B0 /* closeAddressBookVC */ = {
+			isa = PBXGroup;
+			children = (
+				5A8754451E28713B000F77B0 /* TMCloseAddressBookVC.h */,
+				5A8754461E28713B000F77B0 /* TMCloseAddressBookVC.m */,
+				5A8754471E28713B000F77B0 /* TMCloseAddressBookVC.xib */,
+			);
+			path = closeAddressBookVC;
+			sourceTree = "<group>";
+		};
+		5A87544A1E2873D4000F77B0 /* feedBackVC */ = {
+			isa = PBXGroup;
+			children = (
+				5A8754521E28831C000F77B0 /* res */,
+				5A87544B1E287473000F77B0 /* TMFeedBackVC.h */,
+				5A87544C1E287473000F77B0 /* TMFeedBackVC.m */,
+				5A87544D1E287473000F77B0 /* TMFeedBackVC.xib */,
+			);
+			path = feedBackVC;
+			sourceTree = "<group>";
+		};
+		5A8754501E28830B000F77B0 /* aboutVC */ = {
+			isa = PBXGroup;
+			children = (
+				5A8754511E28830B000F77B0 /* res */,
+				5A8754531E28836B000F77B0 /* TMAboutVC.h */,
+				5A8754541E28836B000F77B0 /* TMAboutVC.m */,
+				5A8754551E28836B000F77B0 /* TMAboutVC.xib */,
+			);
+			path = aboutVC;
+			sourceTree = "<group>";
+		};
+		5A8754511E28830B000F77B0 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				5A87545C1E289F7C000F77B0 /* about_logo.png */,
+				5A87545D1E289F7C000F77B0 /* about_copy.png */,
+				5A87545E1E289F7C000F77B0 /* about_bg.png */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		5A8754521E28831C000F77B0 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				5A8754581E288E85000F77B0 /* feedback_select.png */,
+				5A8754591E288E85000F77B0 /* feedback_unselect.png */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		5A8754671E28B072000F77B0 /* inviteVC */ = {
+			isa = PBXGroup;
+			children = (
+				5A8754681E28B072000F77B0 /* res */,
+				5A8754691E28B090000F77B0 /* TMInviteVC.h */,
+				5A87546A1E28B090000F77B0 /* TMInviteVC.m */,
+				5A87546B1E28B090000F77B0 /* TMInviteVC.xib */,
+				5A8754781E28C512000F77B0 /* TMInviteListVC.h */,
+				5A8754791E28C512000F77B0 /* TMInviteListVC.m */,
+				5A87547A1E28C512000F77B0 /* TMInviteListVC.xib */,
+			);
+			path = inviteVC;
+			sourceTree = "<group>";
+		};
+		5A8754681E28B072000F77B0 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				5A87546E1E28BB01000F77B0 /* invite_bg.png */,
+				5A87546F1E28BB01000F77B0 /* invite_list_btn.png */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		5A8754721E28C4C9000F77B0 /* inviteListVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = inviteListVC;
 			sourceTree = "<group>";
 		};
 		65F112D44BC7FB204E534A91 /* Pods */ = {
@@ -1519,10 +1639,15 @@
 		A05B93041E2789AD004CC93C /* user */ = {
 			isa = PBXGroup;
 			children = (
-				A05B93051E2789AD004CC93C /* blacklistVC */,
-				A05B930D1E2789AD004CC93C /* payPassWordVC */,
-				A05B93141E2789AD004CC93C /* settingVC */,
+				5A8754721E28C4C9000F77B0 /* inviteListVC */,
+				5A8754671E28B072000F77B0 /* inviteVC */,
+				5A8754441E28710F000F77B0 /* closeAddressBookVC */,
 				A05B93241E2789AD004CC93C /* userCenterVC */,
+				A05B93141E2789AD004CC93C /* settingVC */,
+				A05B930D1E2789AD004CC93C /* payPassWordVC */,
+				A05B93051E2789AD004CC93C /* blacklistVC */,
+				5A87544A1E2873D4000F77B0 /* feedBackVC */,
+				5A8754501E28830B000F77B0 /* aboutVC */,
 				A05B933A1E2789AD004CC93C /* userInfoVC */,
 				A05B93441E2789AD004CC93C /* userNameChangeVC */,
 			);
@@ -1602,6 +1727,9 @@
 		A05B93241E2789AD004CC93C /* userCenterVC */ = {
 			isa = PBXGroup;
 			children = (
+				5A8754621E28AF4F000F77B0 /* TMUserCenterVC.h */,
+				5A8754631E28AF4F000F77B0 /* TMUserCenterVC.m */,
+				5A8754641E28AF4F000F77B0 /* TMUserCenterVC.xib */,
 				A05B93251E2789AD004CC93C /* res */,
 				A05B93361E2789AD004CC93C /* view */,
 			);
@@ -1613,9 +1741,6 @@
 			children = (
 				A05B93261E2789AD004CC93C /* default_head.png */,
 				A05B93271E2789AD004CC93C /* right_detail.png */,
-				A05B93281E2789AD004CC93C /* TMUserCenterVC.h */,
-				A05B93291E2789AD004CC93C /* TMUserCenterVC.m */,
-				A05B932A1E2789AD004CC93C /* TMUserCenterVC.xib */,
 				A05B932B1E2789AD004CC93C /* userCenter_ invite.png */,
 				A05B932C1E2789AD004CC93C /* userCenter_ wallet.png */,
 				A05B932D1E2789AD004CC93C /* userCenter_auth.png */,
@@ -2053,14 +2178,20 @@
 				A037F1251E23A4F800A857ED /* tmd_price@2x.png in Resources */,
 				A05B93551E2789AD004CC93C /* setting_logout.png in Resources */,
 				A0F99FF71E1BAD5F00C94253 /* tab_zb@2x.png in Resources */,
+				5A8754701E28BB01000F77B0 /* invite_bg.png in Resources */,
+				5A87546D1E28B090000F77B0 /* TMInviteVC.xib in Resources */,
 				A0DC34601E2487A30027F844 /* tmf_topSelected@2x.png in Resources */,
 				A05B935B1E2789AD004CC93C /* default_head.png in Resources */,
 				A05B93501E2789AD004CC93C /* setting_about.png in Resources */,
 				A05B935C1E2789AD004CC93C /* right_detail.png in Resources */,
 				A05B934D1E2789AD004CC93C /* TMPayPasswordVC.xib in Resources */,
+				5A8754661E28AF4F000F77B0 /* TMUserCenterVC.xib in Resources */,
 				A0F99FF61E1BAD5F00C94253 /* tab_xx@2x.png in Resources */,
+				5A87545A1E288E85000F77B0 /* feedback_select.png in Resources */,
 				A05B93531E2789AD004CC93C /* setting_feedback.png in Resources */,
+				5A8754571E28836B000F77B0 /* TMAboutVC.xib in Resources */,
 				A0F99FF81E1BAD5F00C94253 /* tab_zt@2x.png in Resources */,
+				5A87545F1E289F7D000F77B0 /* about_logo.png in Resources */,
 				A037F10F1E23739C00A857ED /* tm_btn_other@2x.png in Resources */,
 				A05B93701E2789AD004CC93C /* TMUserInfoTableCell.xib in Resources */,
 				A0C4CB1D1E25D26700879D7E /* tm_header_def@2x.png in Resources */,
@@ -2070,7 +2201,7 @@
 				A05B93611E2789AD004CC93C /* userCenter_auth.png in Resources */,
 				A0DE4F0B1E20E39D00F4E02A /* tm_nav_bg@2x.png in Resources */,
 				A05B93561E2789AD004CC93C /* setting_password.png in Resources */,
-				A05B935E1E2789AD004CC93C /* TMUserCenterVC.xib in Resources */,
+				5A8754491E28713B000F77B0 /* TMCloseAddressBookVC.xib in Resources */,
 				A037F1101E23739C00A857ED /* tm_btn_selectCity@2x.png in Resources */,
 				A05B936D1E2789AD004CC93C /* TMUserInfoVC.xib in Resources */,
 				A053F36E1E24E0BA0046FAE6 /* citydict.plist in Resources */,
@@ -2089,10 +2220,12 @@
 				A02E01E31E1CBE0D00C62C61 /* icon_btn_bg@2x.png in Resources */,
 				A02E01D81E1CA2A900C62C61 /* tm_btn_star@2x.png in Resources */,
 				A02E01E41E1CBE0D00C62C61 /* tm_login_topbg@2x.png in Resources */,
+				5A8754611E289F7D000F77B0 /* about_bg.png in Resources */,
 				A05B934F1E2789AD004CC93C /* TMSetPayPasswordVC.xib in Resources */,
 				A02E02071E1CF79400C62C61 /* icon_back@2x.png in Resources */,
 				A0C0E5411E1E2DA4001C632C /* tm_rec_bg@2x.png in Resources */,
 				A0DE4F001E20DD4E00F4E02A /* tm_rec_content@2x.png in Resources */,
+				5A87545B1E288E85000F77B0 /* feedback_unselect.png in Resources */,
 				A0F99FE51E1B9D5A00C94253 /* ad_btn_bg@2x.png in Resources */,
 				A01140D51E15FDA100311731 /* Assets.xcassets in Resources */,
 				A05B936B1E2789AD004CC93C /* TMUserCenterTableCell.xib in Resources */,
@@ -2104,13 +2237,16 @@
 				A05B93581E2789AD004CC93C /* TMSettingVC.xib in Resources */,
 				A05B93621E2789AD004CC93C /* userCenter_collection.png in Resources */,
 				A0DC345E1E2487A30027F844 /* tmf_right@2x.png in Resources */,
+				5A87547C1E28C512000F77B0 /* TMInviteListVC.xib in Resources */,
 				A05B93601E2789AD004CC93C /* userCenter_ wallet.png in Resources */,
 				A0C4CB211E25D26700879D7E /* tmm_ye@2x.png in Resources */,
 				A05B93651E2789AD004CC93C /* userCenter_rent_out.png in Resources */,
 				A037F0FD1E23217600A857ED /* nav_item_bg@2x.png in Resources */,
+				5A8754601E289F7D000F77B0 /* about_copy.png in Resources */,
 				A05B93691E2789AD004CC93C /* userCenter_vipCenter.png in Resources */,
 				A0C0E53A1E1E2A6B001C632C /* tm_reg_yqr@2x.png in Resources */,
 				A02E02021E1CED4600C62C61 /* nav_bg@2x.png in Resources */,
+				5A8754711E28BB01000F77B0 /* invite_list_btn.png in Resources */,
 				A02E01D61E1CA1C300C62C61 /* tm_guide3@2x.png in Resources */,
 				A037F1071E235F6400A857ED /* tm_price@2x.png in Resources */,
 				A05B93641E2789AD004CC93C /* userCenter_rent_in.png in Resources */,
@@ -2118,6 +2254,7 @@
 				A053F36D1E24E0BA0046FAE6 /* cancelBtn@2x.png in Resources */,
 				A05B93671E2789AD004CC93C /* userCenter_topp_bg.png in Resources */,
 				A037F1051E235DCA00A857ED /* tm_renter_def@2x.png in Resources */,
+				5A87544F1E287473000F77B0 /* TMFeedBackVC.xib in Resources */,
 				A05B934B1E2789AD004CC93C /* TMBlacklistTableCell.xib in Resources */,
 				A037F10B1E236AC900A857ED /* tm_sex@2x.png in Resources */,
 				A05B91611E276D2B004CC93C /* tm_markVip@2x.png in Resources */,
@@ -2220,6 +2357,7 @@
 				A05B92E11E277364004CC93C /* EaseEmotionManager.m in Sources */,
 				A04871091E272347009E0228 /* TMSelectMapPointVC.m in Sources */,
 				A0F99FE91E1BA05C00C94253 /* UIButton+Countdown.m in Sources */,
+				5A87547B1E28C512000F77B0 /* TMInviteListVC.m in Sources */,
 				A05B92961E277364004CC93C /* MBProgressHUD+Add.m in Sources */,
 				A05B92CE1E277364004CC93C /* PSTGridLayoutItem.m in Sources */,
 				A05B92DD1E277364004CC93C /* EaseMessageReadManager.m in Sources */,
@@ -2230,6 +2368,7 @@
 				A05B92BF1E277364004CC93C /* UIImage+EMMultiFormat.m in Sources */,
 				A053F3701E24E0BA0046FAE6 /* ResultCityController.m in Sources */,
 				A05B93591E2789AD004CC93C /* TMSettingCell.m in Sources */,
+				5A8754561E28836B000F77B0 /* TMAboutVC.m in Sources */,
 				A05B92EB1E277364004CC93C /* EaseCustomMessageCell.m in Sources */,
 				A05B92E31E277364004CC93C /* EaseConversationListViewController.m in Sources */,
 				A05B92DE1E277364004CC93C /* EaseEmoji.m in Sources */,
@@ -2253,6 +2392,7 @@
 				A05B92B51E277364004CC93C /* EMSDWebImageCompat.m in Sources */,
 				A05B92FB1E277364004CC93C /* EaseFacialView.m in Sources */,
 				A0DE4F1A1E20ED4B00F4E02A /* TMNavMenuCell.m in Sources */,
+				5A87546C1E28B090000F77B0 /* TMInviteVC.m in Sources */,
 				A05B92931E277364004CC93C /* EMVoiceConverter.mm in Sources */,
 				A05B92C21E277364004CC93C /* UIImageView+EMWebCache.m in Sources */,
 				A05B92DB1E277364004CC93C /* EaseChineseToPinyin.m in Sources */,
@@ -2263,7 +2403,6 @@
 				A05B92C31E277364004CC93C /* UIView+EMWebCacheOperation.m in Sources */,
 				A02E01F51E1CD12100C62C61 /* TMBaseVC.m in Sources */,
 				A05B928A1E277364004CC93C /* EMAudioPlayerUtil.m in Sources */,
-				A05B935D1E2789AD004CC93C /* TMUserCenterVC.m in Sources */,
 				A05B92AD1E277364004CC93C /* MWGridViewController.m in Sources */,
 				A05B92F31E277364004CC93C /* EaseBubbleView+Video.m in Sources */,
 				A0C4CB291E25FF1A00879D7E /* TMMInfoCell.m in Sources */,
@@ -2271,8 +2410,10 @@
 				A05B92F41E277364004CC93C /* EaseBubbleView+Voice.m in Sources */,
 				A02E01E81E1CBF9300C62C61 /* TMloginInPutView.m in Sources */,
 				A05B928B1E277364004CC93C /* EMAudioRecorderUtil.m in Sources */,
+				5A8754481E28713B000F77B0 /* TMCloseAddressBookVC.m in Sources */,
 				A053F3811E24EABC0046FAE6 /* UIImage+ImageCompress.m in Sources */,
 				A05B92B61E277364004CC93C /* EMSDWebImageDecoder.m in Sources */,
+				5A8754651E28AF4F000F77B0 /* TMUserCenterVC.m in Sources */,
 				A05B92D41E277364004CC93C /* EaseMessageModel.m in Sources */,
 				A053F3581E24D6680046FAE6 /* ASValueTrackingSlider.m in Sources */,
 				A05B92B21E277364004CC93C /* MWZoomingScrollView.m in Sources */,
@@ -2287,6 +2428,7 @@
 				A05B92D21E277364004CC93C /* EaseSDKHelper.m in Sources */,
 				A05B92EF1E277364004CC93C /* EaseBubbleView+Gif.m in Sources */,
 				A09C5F491E1E10F600162939 /* TMRegisterInputView.m in Sources */,
+				5A87544E1E287473000F77B0 /* TMFeedBackVC.m in Sources */,
 				A02E02001E1CEC6200C62C61 /* TMNavigationController.m in Sources */,
 				A05B928D1E277364004CC93C /* EMCDDeviceManager+Microphone.m in Sources */,
 				A053F3721E24E0BA0046FAE6 /* CityTableViewCell.m in Sources */,

@@ -11,6 +11,9 @@
 
 #import "TMPayPasswordVC.h"
 #import "TMBlacklistVC.h"
+#import "TMCloseAddressBookVC.h"
+#import "TMFeedBackVC.h"
+#import "TMAboutVC.h"
 
 @interface TMSettingVC (){
     NSArray *imageArr;
@@ -81,22 +84,35 @@
             break;
         case 2:
         {
+            //屏蔽通讯录
+            TMCloseAddressBookVC *addressBookVC = [[TMCloseAddressBookVC alloc] initWithNibName:@"TMCloseAddressBookVC" bundle:nil];
+            [self.navigationController pushViewController:addressBookVC animated:YES];
         }
             break;
         case 3:
         {
+            //意见反馈
+            TMFeedBackVC *feedbackVC = [[TMFeedBackVC alloc] initWithNibName:@"TMFeedBackVC" bundle:nil];
+            [self.navigationController pushViewController:feedbackVC animated:YES];
         }
             break;
         case 4:
         {
+            //清除缓存
+            
         }
             break;
         case 5:
         {
+            //关于我们
+            TMAboutVC *aboutVC = [[TMAboutVC alloc] initWithNibName:@"TMAboutVC" bundle:nil];
+            [self.navigationController pushViewController:aboutVC animated:YES];
         }
             break;
         case 6:
         {
+            //退出登录
+            
         }
             break;
         default:
