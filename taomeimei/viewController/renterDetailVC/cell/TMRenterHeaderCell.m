@@ -24,7 +24,7 @@
         mBGImageView.endlessScroll = YES;
         [mBGImageView setImagePlayerViewDelegate:(id)self];
         [mBGImageView.pageControl setCurrentPageIndicatorTintColor:[UIColor whiteColor]];
-        [mBGImageView.pageControl setPageIndicatorTintColor:[UIColor colorWithHexString:@"ffaec1"]];
+        [mBGImageView.pageControl setPageIndicatorTintColor:[UIColor colorWithHexString:@"fb686e"]];
         [self.contentView addSubview:mBGImageView];
         [mBGImageView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.left.right.bottom.mas_equalTo(0);
@@ -33,10 +33,19 @@
     }
     return self;
 }
+-(void)setMPhotos:(NSArray *)mPhotos{
+    _mPhotos = mPhotos;
+    [mBGImageView reloadData];
+}
+
 #pragma mark - ImagePlayerViewDelegate
 - (NSInteger)numberOfItems
 {
-    return 3;
+    if (self.mPhotos) {
+        return self.mPhotos.count;
+    }
+    
+    return 0;
 }
 - (void)imagePlayerView:(ImagePlayerView *)imagePlayerView loadImageForImageView:(UIImageView *)imageView index:(NSInteger)index
 {
@@ -47,7 +56,8 @@
 
 - (void)imagePlayerView:(ImagePlayerView *)imagePlayerView didTapAtIndex:(NSInteger)index
 {
-
-    
+    if (self.didTapAtIndex) {
+        self.didTapAtIndex(index);
+    }
 }
 @end

@@ -18,7 +18,7 @@
     UIImageView  *mImageView;
     UIImageView *mMarkPriceImageView;
     UIImageView *mSexImageView;
-    
+    UIImageView *mIsVipImageView;
     UIButton *mCollectBtn;
     UIView *mLineView;
     
@@ -44,6 +44,14 @@
         [mSexImageView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(mNameLable.mas_right).with.offset(5);
             make.bottom.equalTo(mNameLable.mas_bottom);
+        }];
+        
+        mIsVipImageView = [[UIImageView alloc]init];
+        [mIsVipImageView setContentMode:UIViewContentModeScaleAspectFit];
+        [self.contentView addSubview:mIsVipImageView];
+        [mIsVipImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(mSexImageView.mas_right).with.offset(10);
+            make.bottom.equalTo(mSexImageView.mas_bottom).with.offset(-1);
         }];
         
         mSignatureLable = [[UILabel alloc]init];
@@ -160,6 +168,14 @@
 -(void)setMProfession:(NSString *)mProfession{
     _mProfession = mProfession;
     [mProfessionLable setText:mProfession];
+}
+-(void)setIsVip:(BOOL)isVip{
+    _isVip = isVip;
+    if (isVip) {
+        [mIsVipImageView setImage:[UIImage imageNamed:@"tm_markVip"]];
+    }else{
+        [mIsVipImageView setImage:nil];
+    }
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

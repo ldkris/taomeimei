@@ -9,10 +9,12 @@
 #import "TMRenterVC.h"
 #import "TMRNavView.h"
 #import "TMRenterListInfoCell.h"
+#import "TMRenterNearListCell.h"
 #import "TMRenterDetailVC.h"
 #import "TMFiltrateVC.h"
 #import "CityViewController.h"
 #import "MKJFirstViewController.h"
+#import "WJItemsControlView.h"
 @interface TMRenterVC ()
 
 @end
@@ -21,13 +23,13 @@
     TMRNavView *mNavView;
     UITableView *mInfoTableView;
     BOOL isPush;
+    WJItemsControlView *_itemControlView;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     mNavView = [[TMRNavView alloc]init];
-    [mNavView setMItems:@[@"新上架",@"附近",@"高颜值区",@"低价区",@"认证"]];
     [mNavView setMpageSize:5];
     [mNavView setMBgImage:[UIImage imageNamed:@"tm_nav_bg"]];
     __weak __typeof__(self) weakSelf = self;
@@ -39,8 +41,6 @@
     [mNavView setDidSearchBtnBlcock:^(UIButton *sender) {
         //搜索
         MKJFirstViewController *first = [[MKJFirstViewController alloc]init];
-        UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:first];
-       // [weakSelf.navigationController presentViewController:nvc animated:YES completion:nil];
         [weakSelf.navigationController pushViewController:first animated:YES];
     }];
     [mNavView setDidSelectCityBtnBlcock:^(UIButton *sender) {
@@ -48,20 +48,56 @@
         CityViewController *controller = [[CityViewController alloc] init];
         controller.currentCityString = @"重庆";
         controller.selectString = ^(NSString *string){
-            //self.cityLabel.text = string;
+            
         };
         [weakSelf presentViewController:controller animated:YES completion:nil];
     }];
-    [mNavView setDidSelectItemAtIndexPathBlcock:^(NSIndexPath *index) {
-       //选择菜单
-        LDLOG(@"%ld",(long)index.row);
-    }];
     [self.view addSubview:mNavView];
     
-    mInfoTableView =  [self createTableView];
-    [self.view addSubview:mInfoTableView];
-    
     isPush = YES;
+    
+    float widht = [UIScreen mainScreen].bounds.size.width;
+    float heith = [UIScreen mainScreen].bounds.size.height;
+    
+    NSArray *array = @[@"新上架",@"附近",@"高颜值区",@"低价区",@"认证"];
+    
+    //4页内容的scrollView
+    UIScrollView *scroll = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 100, widht, heith-150)];
+    scroll.delegate = self;
+    scroll.pagingEnabled = YES;
+    scroll.showsVerticalScrollIndicator = NO;
+    scroll.showsHorizontalScrollIndicator = NO;
+    scroll.contentSize = CGSizeMake(widht*array.count, 100);
+    
+    for (int i=0; i<array.count; i++) {
+        UITableView *mTablView = [self createTableView];
+        [mTablView setTag:200+i];
+        [mTablView setFrame:CGRectMake(widht*i, 0, widht, heith-150)];
+        [scroll addSubview:mTablView];
+    }
+    [self.view addSubview:scroll];
+    
+    
+    //头部控制的segMent
+    WJItemsConfig *config = [[WJItemsConfig alloc]init];
+    config.itemWidth = widht/4.0;
+    config.itemFont = DEFAULT_FONT(14);
+    config.textColor = [UIColor whiteColor];
+    config.selectedColor = [UIColor colorWithHexString:@"ffaec1"];
+
+    _itemControlView = [[WJItemsControlView alloc]initWithFrame:CGRectMake(0, 100-40, widht, 44)];
+    _itemControlView.tapAnimation = YES;
+    _itemControlView.config = config;
+    _itemControlView.titleArray = array;
+    
+    __weak typeof (scroll)weakScrollView = scroll;
+    [_itemControlView setTapItemWithIndex:^(NSInteger index,BOOL animation){
+        
+        [weakScrollView scrollRectToVisible:CGRectMake(index*weakScrollView.frame.size.width, 0.0, weakScrollView.frame.size.width,weakScrollView.frame.size.height) animated:animation];
+        
+    }];
+    [self.view addSubview:_itemControlView];
+    
 }
 -(void)viewWillAppear:(BOOL)animated{
     [self.navigationController setNavigationBarHidden:YES animated:animated];
@@ -71,15 +107,7 @@
         make.top.left.right.mas_equalTo(0);
         make.height.mas_equalTo(105);
     }];
-    [mInfoTableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.left.mas_equalTo(0);
-        make.top.equalTo(mNavView.mas_bottom);
-        if (isPush) {
-            make.bottom.mas_equalTo(0);
-        } else  {
-            make.bottom.mas_equalTo(-50);
-        }
-    }];
+
 }
 -(void)viewWillDisappear:(BOOL)animated{
     [self.navigationController setNavigationBarHidden:NO animated:animated];
@@ -103,21 +131,57 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    TMRenterListInfoCell  *cell = [tableView dequeueReusableCellWithIdentifier:@"TMRenterListInfoCell"];
-    if (!cell) {
-        cell = [[TMRenterListInfoCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"TMRenterListInfoCell"];
+    if (tableView.tag == 201) {
+        TMRenterNearListCell  *cell = [tableView dequeueReusableCellWithIdentifier:@"TMRenterNearListCell"];
+        if (!cell) {
+            cell = [[TMRenterNearListCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"TMRenterNearListCell"];
+        }
+        [cell setMName:@"Mlao_D"];
+        [cell setMPrice:@"200/时"];
+        [cell setMSignature:@"租个男友回家过年吧！"];
+        [cell setIsVip:YES];
+        [cell setMArea:@"300米"];
+        [cell setMProfession:@"自由职业"];
+        [cell setMImage:[UIImage imageNamed:@"tm_renter_def"]];
+        return cell;
+    }else{
+        TMRenterListInfoCell  *cell = [tableView dequeueReusableCellWithIdentifier:@"TMRenterListInfoCell"];
+        if (!cell) {
+            cell = [[TMRenterListInfoCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"TMRenterListInfoCell"];
+        }
+        [cell setMName:@"Mlao_D"];
+        [cell setMPrice:@"200/时"];
+        [cell setMSignature:@"租个男友回家过年吧！"];
+        [cell setMArea:@"重庆"];
+        [cell setIsVip:YES];
+        [cell setMProfession:@"自由职业"];
+        [cell setMImage:[UIImage imageNamed:@"tm_renter_def"]];
+        return cell;
     }
-    [cell setMName:@"Mlao_D"];
-    [cell setMPrice:@"200/时"];
-    [cell setMSignature:@"租个男友回家过年吧！"];
-    [cell setMArea:@"重庆"];
-    [cell setMProfession:@"自由职业"];
-    [cell setMImage:[UIImage imageNamed:@"tm_renter_def"]];
-    return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    // [self dismissViewControllerAnimated:YES completion:nil];
     TMRenterDetailVC *mRenterDetailVC = [[TMRenterDetailVC alloc]init];
     [self.navigationController pushViewController:mRenterDetailVC animated:YES];
+}
+#pragma mark scrollViewDelegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if([scrollView isKindOfClass:[UITableView class]]){
+        return;
+    }
+    float offset = scrollView.contentOffset.x;
+    offset = offset/CGRectGetWidth(scrollView.frame);
+    [_itemControlView moveToIndex:offset];
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    if([scrollView isKindOfClass:[UITableView class]]){
+    return;
+    }
+    float offset = scrollView.contentOffset.x;
+    offset = offset/CGRectGetWidth(scrollView.frame);
+    [_itemControlView endMoveToIndex:offset];
+    
 }
 @end

@@ -9,5 +9,6 @@
 #import "TMTableViewCell.h"
 
 @interface TMRenterHeaderCell : TMTableViewCell
-
+@property(nonatomic,retain)NSArray *mPhotos;
+@property(nonatomic,copy)void(^didTapAtIndex)(NSInteger index);
 @end

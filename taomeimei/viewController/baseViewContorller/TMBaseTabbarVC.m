@@ -90,6 +90,7 @@
             [btn setImage:[UIImage imageNamed:self.barImages[btn.tag]] forState:UIControlStateNormal];
         }
     }
+    LDLOG(@"%ld",(long)sender.tag);
     [self setSelectedIndex:sender.tag];
 }
 
