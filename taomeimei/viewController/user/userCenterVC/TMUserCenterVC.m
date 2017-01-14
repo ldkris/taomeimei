@@ -11,6 +11,7 @@
 
 #import "TMSettingVC.h"
 #import "TMUserInfoVC.h"
+#import "TMInviteVC.h"
 
 @interface TMUserCenterVC (){
     
@@ -86,6 +87,24 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            //我租了谁
+        }
+        if (indexPath.row == 1) {
+            //谁租了我
+        }
+    }
+    if (indexPath.section == 1) {
+        if (indexPath.row == 0) {
+            //个人认证
+        }
+        if (indexPath.row == 1) {
+            //邀请奖励
+            TMInviteVC *inviteVC = [[TMInviteVC alloc] initWithNibName:@"TMInviteVC" bundle:nil];
+            [self.navigationController pushViewController:inviteVC animated:YES];
+        }
+    }
 }
 
 - (IBAction)settingBtnClick:(id)sender {
